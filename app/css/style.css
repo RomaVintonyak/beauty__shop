@@ -1,5 +1,5 @@
 /*google foonts*/
-@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;500;700&display=swap");
 /*==================*/
 /*normalize css https://necolas.github.io/normalize.css/ */
 html {
@@ -237,13 +237,19 @@ template {
 }
 
 /*main style*/
+* {
+    border: 0;
+}
+
 html {
     font-size: 10px;
-    overflow-x: hidden;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
 }
 
 body {
-    font-family: "Ubuntu", sans-serif;
+    font-family: "Raleway", sans-serif;
     font-size: 1.6rem;
     font-weight: 300;
     -webkit-font-smoothing: antialiased;
@@ -258,6 +264,15 @@ body {
 *::before,
 *::after {
     box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+nav,
+footer,
+header,
+aside {
+    display: block;
 }
 
 h1,
@@ -267,10 +282,46 @@ h4,
 h5,
 h6 {
     margin: 0;
+    font-size: inherit;
+    font-weight: 300;
 }
 
 p {
     margin: 0;
+}
+
+img {
+    vertical-align: top;
+}
+
+input {
+    font-family: inherit;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+button {
+    font-family: inherit;
+    cursor: pointer;
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+textarea {
+    font-family: inherit;
+}
+
+:focus {
+    outline: none;
+}
+
+:active {
+    outline: none;
 }
 
 a:focus {
@@ -319,88 +370,3 @@ a:focus {
 }
 
 /*header*/
-/*test block*/
-.header {
-    width: 100%;
-    height: 8vh;
-    background-color: rgba(8, 68, 231, 0.4);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.nav__menu {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.nav__menu--main {
-    list-style-type: none;
-    width: 50%;
-    height: 100%;
-    display: flex;
-}
-
-.nav__menu--main li {
-    margin-right: 2rem;
-    position: relative;
-}
-
-.nav__menu--main li:last-child {
-    margin-right: 0;
-}
-
-.nav__menu--main li::after {
-    content: "";
-    width: 0;
-    height: 3px;
-    background-color: black;
-    position: absolute;
-    bottom: -0.4rem;
-    left: 0;
-    transition: 0.3s ease-in-out;
-}
-
-.nav__menu--main li:hover::after {
-    width: 100%;
-}
-
-.nav__menu--main li a {
-    text-decoration: none;
-    font-size: 2rem;
-    color: black;
-    font-weight: 600;
-}
-
-.nav__menu--social {
-    width: 50%;
-    height: 100%;
-    display: flex;
-    list-style-type: none;
-    justify-content: end;
-}
-
-.nav__menu--social li {
-    margin-left: 2rem;
-}
-
-.nav__menu--social li:first-child {
-    margin-left: 0;
-}
-
-.nav__menu--social li a {
-    text-decoration: none;
-}
-
-.nav__menu--social li a i {
-    color: red;
-    font-size: 2rem;
-    transition: color, linear, 0.3s;
-}
-
-.nav__menu--social li:hover a i {
-    color: black;
-}

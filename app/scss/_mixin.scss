@@ -36,10 +36,3 @@
 @mixin res-padding {
   padding: 0;
 }
-@mixin text-sm {
-  font-size: 1.4rem;
-  color: $black;
-  font-weight: 400;
-  font-style: normal;
-  font-family: inherit;
-}
