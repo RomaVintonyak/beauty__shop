@@ -1,3 +1,193 @@
 //*mixins*//
 @import "./mixin.scss";
 
+.header {
+   width: 100%;
+   &__baner {
+      width: 100%;
+      background-color: $background;
+      padding: 0.4rem 0;
+      &--row {
+         text-align: center;
+         h3 {
+            color: $white;
+            font-weight: 300;
+            font-size: 1.7rem;
+            font-family: $font;
+         }
+      }
+   }
+   &__menu {
+      width: 100%;
+      background-color: $silver;
+      padding: 0.4rem 0;
+      &--row {
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+      }
+   }
+}
+.nav__menu {
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+   display: flex;
+   align-items: center;
+   &--item {
+      margin-right: 1rem;
+      &:last-child {
+         margin-right: 0;
+      }
+   }
+   &--link {
+      text-decoration: none;
+      font-family: $font;
+      color: $black;
+      font-weight: 300;
+      font-size: 1.5rem;
+      transition: color 0.1s linear;
+      &:hover {
+         cursor: pointer;
+         color: $background;
+      }
+   }
+}
+.nav__login {
+   display: flex;
+   align-items: center;
+   &--popup {
+      display: block;
+      text-decoration: none;
+      i {
+         font-size: 1.5rem;
+         color: $black;
+         transition: color 0.1s linear;
+      }
+      span {
+         font-family: $font;
+         font-weight: 300;
+         font-size: 1.5rem;
+         color: $black;
+         transition: color 0.1s linear;
+      }
+      &:hover {
+         cursor: pointer;
+         i {
+            color: $background;
+         }
+         span {
+            color: $background;
+         }
+      }
+   }
+}
+.header__brand {
+   width: 100%;
+   padding: 0.4rem 0;
+   background-color: $white;
+   &--row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+   }
+}
+.navbar__brand {
+   width: 15%;
+}
+.navbar__content {
+   display: flex;
+   align-items: center;
+   &--phone {
+      margin-right: 3rem;
+      i {
+         font-size: 1.7rem;
+         color: $background;
+         margin-right: 0.5rem;
+      }
+      a {
+         text-decoration: none;
+         font-family: $font;
+         font-weight: 300;
+         color: $black;
+         font-size: 1.7rem;
+         transition: color 0.1s linear;
+         &:hover {
+            cursor: pointer;
+            color: $background;
+         }
+      }
+   }
+   &--time {
+      margin-right: 3rem;
+      P {
+         font-family: $font;
+         font-weight: 300;
+         color: $black;
+         font-size: 1.7rem;
+         i {
+            font-size: 1.7rem;
+            color: $background;
+            margin-right: 0.5rem;
+         }
+         span {
+            font-family: $font;
+            font-weight: 300;
+            color: $black;
+            font-size: 1.7rem;
+         }
+      }
+   }
+   &--basket {
+      text-decoration: none;
+      display: block;
+      i {
+         font-size: 1.7rem;
+         color: $background;
+         margin-bottom: 0.5rem;
+         transition: color 0.1s linear;
+      }
+      p {
+         font-family: $font;
+         font-weight: 700;
+         color: $black;
+         font-size: 1.7rem;
+      }
+      &:hover {
+         cursor: pointer;
+         i {
+            color: $black;
+         }
+      }
+   }
+}
+.header__product{
+   width: 100%;
+   background-color: $background;
+}
+.product__menu{
+   margin: 0;
+   padding: 0;
+   list-style-type: none;
+   display: flex;
+   &--item{
+      width: 12.5%;
+      height: 4rem;
+      transition: background-color 0.2s linear;
+      &:hover{
+         background-color: $main;
+      }
+   }
+   &--link{
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+      color: $white;
+      font-family: $font;
+      font-size: 1.7rem;
+      font-weight: 500;
+   }
+}

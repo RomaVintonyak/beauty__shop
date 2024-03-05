@@ -5,39 +5,145 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
   <meta http-equiv="x-ua-compatible" content="ie=edge" />
   <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css"/>
+  <!--<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css"/>-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
   <!--custom styles-->
   <link rel="stylesheet" href="css/style.min.css" />
-  <meta name="description" content="" />
+  <meta name="description" content="Магазин косметики" />
   <meta name="keywords" content="" />
   <meta name="google" content="notranslate" />
-  <meta name="author" content="Roman Vintonyak" />
+  <meta name="author" content="Roman Coder" />
   <meta name="robots" content="index, follow" />
   <!--disable format detection (iPhone / IPod / IPad) -->
   <meta name="format-detection" content="telephone=no" />
   <!--BlackBerry-->
   <meta http-equiv="x-rim-auto-match" content="none" />
-  <title>Gulp&commat; &mdash; Task manager template</title>
+  <title>Beauty&commat; &mdash; Магазин кометики для тебе</title>
 </head>
 <body>
-
-
-  <!--test block-->
+  <!--header block-->
   <header class="header" id="header">
-    <div class="container">
-      <nav class="nav__menu">
-        <ul class="nav__menu--main">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li class="_callback"><a href="#">Contact</a></li>
-        </ul>
-        <ul class="nav__menu--social">
-          <li data-callback="zoom"><a href="#"><i class="fab fa-facebook"></i></a></li>
-          <li data-callback="zoom"><a href="#"><i class="fab fa-instagram"></i></a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+    <!--header__baner-->
+    <section class="header__baner">
+      <div class="container">
+        <div class="header__baner--row">
+          <h3>
+            Купуй одним чеком на суму від 2500 грн та отримуй 
+            PLASMA MASK, 500 ml 💝ПОДАРУНОК💝  
+            АКЦІЯ ДІЄ ДО ЗАКІНЧЕННЯ ТОВАРУ НА СКЛАДІ !
+          </h3>
+        </div><!--/.row-->
+      </div><!--/.container-->
+    </section><!--/.header__baner-->
+    <!--header menu-->
+    <nav class="header__menu">
+      <div class="container">
+        <div class="header__menu--row">
+          <ul class="nav__menu">
+            <li class="nav__menu--item">
+              <a href="pages/catalog.html" class="nav__menu--link">Каталог</a>
+            </li>
+            <li class="nav__menu--item">
+              <a href="pages/pro_nas.html" class="nav__menu--link">Про нас</a>
+            </li>
+            <li class="nav__menu--item">
+              <a href="pages/dostavka.html" class="nav__menu--link">Оплата і доставка</a>
+            </li>
+            <li class="nav__menu--item">
+              <a href="pages/obmin.html" class="nav__menu--link">Обмін та повернення</a>
+            </li>
+            <li class="nav__menu--item">
+              <a href="pages/ugoda.html" class="nav__menu--link">Угода користувача</a>
+            </li>
+            <li class="nav__menu--item">
+              <a href="pages/contact.html" class="nav__menu--link">Контактна інформація</a>
+            </li>
+            <li class="nav__menu--item">
+              <a href="pages/akcii.html" class="nav__menu--link">Акції та знижки</a>
+            </li>
+          </ul><!--/.-->
+          <div class="nav__login">
+            <div class="burger__btn">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div><!--/.burger-->
+            <a class="nav__login--popup" href="#js/modal.js">
+              <i class="fas fa-user"></i>
+              <span>Вхід</span>
+            </a>
+          </div><!--/.nav__login-->
+        </div><!--/.row-->
+      </div><!--/.container-->
+    </nav><!--/.header__menu-->
+    <!--header brand-->
+    <section class="header__brand">
+      <div class="container">
+        <div class="header__brand--row">
+          <div class="navbar__brand">
+            <a href="index.html">
+              <picture>
+                <source srcset="img/logo/logo.webp" type="image/webp">
+                <img src="img/logo/logo.png" alt="logo" class="img">
+              </picture>
+            </a>
+          </div><!--/.navbar__brand-->
+          <div class="navbar__content">
+            <div class="navbar__content--phone">
+              <i class="fas fa-phone-square-alt"></i>
+              <a href="tel:+380500502200" >050 050 22 00</a>
+            </div><!--/.phone-->
+            <div class="navbar__content--time">
+              <p>
+                <i class="fas fa-clock"></i>
+                <span>Графік роботи:</span>
+              </p>
+              <p>Пн&ndash;Пт &mdash; 10:00 &ndash; 18:00</p>
+              <p>Сб&ndash;Нд &mdash; 11:00 &ndash; 17:00</p>
+            </div><!--/.time-->
+            <a href="pages/basket.html" class="navbar__content--basket">
+              <i class="fas fa-shopping-cart"></i>
+              <p id="basketCount">00</p>
+            </a><!--/.basket-->
+          </div><!--/.navbar__content-->
+        </div><!--/.row-->
+      </div><!--/.container-->
+    </section><!--header__brand-->
+    <!--header cat-->
+    <section class="header__product">
+      <div class="container">
+        <div class="header__product--row">
+          <ul class="product__menu">
+            <li class="product__menu--item">
+              <a href="pages/catalog.html" class="product__menu--link">Шампуні</a>
+            </li>
+            <li class="product__menu--item">
+              <a href="pages/catalog.html" class="product__menu--link">Кондиціонери</a>
+            </li>
+            <li class="product__menu--item">
+              <a href="pages/catalog.html" class="product__menu--link">Термозахист</a>
+            </li>
+            <li class="product__menu--item">
+              <a href="pages/catalog.html" class="product__menu--link">Трихологія</a>
+            </li>
+            <li class="product__menu--item">
+              <a href="pages/catalog.html" class="product__menu--link">Набори</a>
+            </li>
+            <li class="product__menu--item">
+              <a href="pages/catalog.html" class="product__menu--link">Догляд за тілом</a>
+            </li>
+            <li class="product__menu--item">
+              <a href="pages/catalog.html" class="product__menu--link">Чоловіча серія</a>
+            </li>
+            <li class="product__menu--item">
+              <a href="pages/catalog.html" class="product__menu--link">Аксесуари</a>
+            </li>
+          </ul><!--/.product__menu-->
+        </div><!--/.row-->
+      </div><!--/.container-->
+    </section><!--/.header__product-->
+  </header><!--/.header-->
   
 
 
