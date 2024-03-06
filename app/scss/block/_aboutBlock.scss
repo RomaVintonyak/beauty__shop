@@ -1,0 +1,36 @@
+//*mixins*//
+@import "./mixin.scss";
+
+.about__block {
+   margin-top: 4rem;
+   &--row {
+      display: flex;
+      justify-content: space-between;
+   }
+}
+.about__content {
+   width: 23%;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   &--picture {
+      width: 25%;
+   }
+   &--text {
+      width: 70%;
+      text-align: left;
+      h3 {
+         color: $black;
+         font-family: $font;
+         font-weight: 500;
+         font-size: 1.7rem;
+         margin-bottom: 1rem;
+      }
+      p {
+         color: $black;
+         font-family: $font;
+         font-weight: 300;
+         font-size: 1.4rem;
+      }
+   }
+}
