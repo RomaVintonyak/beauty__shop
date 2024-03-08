@@ -1,0 +1,68 @@
+//*mixins*//
+@import "./mixin.scss";
+
+.back__top {
+   position: fixed;
+   right: 2%;
+   bottom: -3.6rem;
+   z-index: 10;
+   width: 3.6rem;
+   height: 3.6rem;
+   background-color: $silver;
+   border: 1px solid;
+   border-color: $main;
+   border-radius: 50%;
+   border-bottom-left-radius: 0;
+   border-bottom-right-radius: 0;
+   border-bottom: none;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   transition: bottom 0.2s linear, border-color 0.2s linear;
+   &--content {
+      position: relative;
+      span {
+         position: absolute;
+         top: calc(50% - 1rem);
+         left: -7rem;
+         padding: 0.3rem 0.6rem;
+         background-color: $black;
+         color: $white;
+         font-family: $font;
+         font-weight: 300;
+         font-size: 1.2rem;
+         border-radius: 2px;
+         visibility: hidden;
+         opacity: 0;
+         transition: opacity 0.2s linear, visibility 0.2s linear;
+         &::after {
+            position: absolute;
+            right: -10%;
+            top: calc(50% - 4px);
+            content: "";
+            width: 0;
+            height: 0;
+            border-top: 4px solid rgba(0, 0, 0, 0);
+            border-bottom: 4px solid rgba(0, 0, 0, 0);
+            border-left: 4px solid $black;
+         }
+      }
+      i {
+         font-size: 1.8rem;
+         margin-top: 0.5rem;
+      }
+      &:hover {
+         span {
+            visibility: visible;
+            opacity: 1;
+         }
+      }
+   }
+   &:hover {
+      cursor: pointer;
+      border-color: $black;
+   }
+   &--active{
+      bottom: 0;
+   }
+}

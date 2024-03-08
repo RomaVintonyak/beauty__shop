@@ -38,4 +38,20 @@ jQuery(document).ready(function () {
     prevArrow: '<button type="button" class="product__slider--prev"><span></span></button>',
     nextArrow: '<button type="button" class="product__slider--next"><span></span></button>',
   });
+  /*back top button*/
+  var backTop = $("#backTop");
+  var introHeight = $(".intro").height();
+  $(window).on("scroll", function(){
+    if($(this).scrollTop() >= (introHeight)){
+      backTop.addClass("back__top--active");
+    }else{
+      backTop.removeClass("back__top--active");
+    }
+  });
+  backTop.on("click", function(event){
+    event.preventDefault();
+    $("html, body").animate({
+      scrollTop: 0,
+    }, 1000, "swing");
+  });
 });

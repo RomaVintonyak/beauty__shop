@@ -20,44 +20,217 @@
          font-weight: 500;
          font-size: 2rem;
          color: $white;
-         &:last-child{
+         &:last-child {
             margin-left: 1rem;
          }
       }
    }
-   &--copy{
+   &--copy {
       font-weight: 300;
       font-size: 1.6rem;
       color: $white;
       font-family: $font;
    }
 }
-.footer__catalog{
+.footer__catalog {
    width: 20%;
-   &--title{
+   &--title {
       margin-bottom: 1rem;
-      h3{
+      h3 {
          font-family: $font;
          color: $white;
          font-weight: 500;
          font-size: 2rem;
       }
    }
-   &--menu{
+   &--menu {
       margin: 0;
       padding: 0;
       list-style-type: none;
-      li{
+      li {
          margin-bottom: 0.6rem;
-         &:last-child{
+         &:last-child {
             margin-bottom: 0;
          }
-         a{
+         a {
             text-decoration: none;
             color: $white;
             font-family: $font;
             font-weight: 300;
             font-size: 1.5rem;
+            transition: color 0.2s linear;
+            &:hover {
+               color: $black;
+            }
+         }
+      }
+   }
+}
+.footer__menu {
+   width: 20%;
+   &--title {
+      margin-bottom: 1rem;
+      h3 {
+         font-family: $font;
+         color: $white;
+         font-weight: 500;
+         font-size: 2rem;
+      }
+   }
+   &--menu {
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+      li {
+         margin-bottom: 0.6rem;
+         &:last-child {
+            margin-bottom: 0;
+         }
+         a {
+            text-decoration: none;
+            color: $white;
+            font-family: $font;
+            font-weight: 300;
+            font-size: 1.5rem;
+            transition: color 0.2s linear;
+            &:hover {
+               color: $black;
+            }
+         }
+      }
+   }
+}
+.footer__contact {
+   width: 20%;
+   &--title {
+      margin-bottom: 1rem;
+      h3 {
+         font-family: $font;
+         color: $white;
+         font-weight: 500;
+         font-size: 2rem;
+      }
+   }
+}
+.adres__phone {
+   display: flex;
+   align-items: center;
+   margin-bottom: 0.8rem;
+   i {
+      color: $white;
+      font-size: 2rem;
+      margin-right: 0.6rem;
+      transition: color 0.2s linear;
+   }
+   a {
+      text-decoration: none;
+      font-family: $font;
+      font-weight: 300;
+      color: $white;
+      font-size: 1.5rem;
+      transition: color 0.2s linear;
+   }
+   &:hover {
+      i {
+         color: $black;
+      }
+      a {
+         color: $black;
+      }
+   }
+}
+.adres__telegram {
+   display: flex;
+   align-items: center;
+   margin-bottom: 0.8rem;
+   i {
+      color: $white;
+      font-size: 2rem;
+      margin-right: 0.6rem;
+      transition: color 0.2s linear;
+   }
+   a {
+      text-decoration: none;
+      font-family: $font;
+      font-weight: 300;
+      color: $white;
+      font-size: 1.5rem;
+      transition: color 0.2s linear;
+   }
+   &:hover {
+      i {
+         color: $black;
+      }
+      a {
+         color: $black;
+      }
+   }
+}
+.adres__mail {
+   display: flex;
+   align-items: center;
+   margin-bottom: 0.8rem;
+   i {
+      color: $white;
+      font-size: 2rem;
+      margin-right: 0.6rem;
+      transition: color 0.2s linear;
+   }
+   a {
+      text-decoration: none;
+      font-family: $font;
+      font-weight: 300;
+      color: $white;
+      font-size: 1.5rem;
+      transition: color 0.2s linear;
+   }
+   &:hover {
+      i {
+         color: $black;
+      }
+      a {
+         color: $black;
+      }
+   }
+}
+.adres__map {
+   display: flex;
+   align-items: center;
+   margin-bottom: 0.8rem;
+   i {
+      color: $white;
+      font-size: 2rem;
+      margin-right: 0.6rem;
+   }
+   span {
+      text-decoration: none;
+      font-family: $font;
+      font-weight: 300;
+      color: $white;
+      font-size: 1.5rem;
+   }
+}
+.adres__social {
+   p {
+      margin-bottom: 0.8rem;
+      font-family: $font;
+      color: $white;
+      font-weight: 500;
+      font-size: 1.5rem;
+   }
+   a {
+      text-decoration: none;
+      &:last-child {
+         margin-left: 0.8rem;
+      }
+      i {
+         color: $white;
+         font-size: 2rem;
+         transition: color 0.2s linear;
+      }
+      &:hover {
+         i {
+            color: $black;
          }
       }
    }

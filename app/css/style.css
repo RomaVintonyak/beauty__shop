@@ -1094,6 +1094,276 @@ a:focus {
     font-family: "Raleway", sans-serif;
     font-weight: 300;
     font-size: 1.5rem;
+    transition: color 0.2s linear;
+}
+
+.footer__catalog--menu li a:hover {
+    color: #000000;
+}
+
+.footer__menu {
+    width: 20%;
+}
+
+.footer__menu--title {
+    margin-bottom: 1rem;
+}
+
+.footer__menu--title h3 {
+    font-family: "Raleway", sans-serif;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 2rem;
+}
+
+.footer__menu--menu {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.footer__menu--menu li {
+    margin-bottom: 0.6rem;
+}
+
+.footer__menu--menu li:last-child {
+    margin-bottom: 0;
+}
+
+.footer__menu--menu li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-family: "Raleway", sans-serif;
+    font-weight: 300;
+    font-size: 1.5rem;
+    transition: color 0.2s linear;
+}
+
+.footer__menu--menu li a:hover {
+    color: #000000;
+}
+
+.footer__contact {
+    width: 20%;
+}
+
+.footer__contact--title {
+    margin-bottom: 1rem;
+}
+
+.footer__contact--title h3 {
+    font-family: "Raleway", sans-serif;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 2rem;
+}
+
+.adres__phone {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.8rem;
+}
+
+.adres__phone i {
+    color: #ffffff;
+    font-size: 2rem;
+    margin-right: 0.6rem;
+    transition: color 0.2s linear;
+}
+
+.adres__phone a {
+    text-decoration: none;
+    font-family: "Raleway", sans-serif;
+    font-weight: 300;
+    color: #ffffff;
+    font-size: 1.5rem;
+    transition: color 0.2s linear;
+}
+
+.adres__phone:hover i {
+    color: #000000;
+}
+
+.adres__phone:hover a {
+    color: #000000;
+}
+
+.adres__telegram {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.8rem;
+}
+
+.adres__telegram i {
+    color: #ffffff;
+    font-size: 2rem;
+    margin-right: 0.6rem;
+    transition: color 0.2s linear;
+}
+
+.adres__telegram a {
+    text-decoration: none;
+    font-family: "Raleway", sans-serif;
+    font-weight: 300;
+    color: #ffffff;
+    font-size: 1.5rem;
+    transition: color 0.2s linear;
+}
+
+.adres__telegram:hover i {
+    color: #000000;
+}
+
+.adres__telegram:hover a {
+    color: #000000;
+}
+
+.adres__mail {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.8rem;
+}
+
+.adres__mail i {
+    color: #ffffff;
+    font-size: 2rem;
+    margin-right: 0.6rem;
+    transition: color 0.2s linear;
+}
+
+.adres__mail a {
+    text-decoration: none;
+    font-family: "Raleway", sans-serif;
+    font-weight: 300;
+    color: #ffffff;
+    font-size: 1.5rem;
+    transition: color 0.2s linear;
+}
+
+.adres__mail:hover i {
+    color: #000000;
+}
+
+.adres__mail:hover a {
+    color: #000000;
+}
+
+.adres__map {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.8rem;
+}
+
+.adres__map i {
+    color: #ffffff;
+    font-size: 2rem;
+    margin-right: 0.6rem;
+}
+
+.adres__map span {
+    text-decoration: none;
+    font-family: "Raleway", sans-serif;
+    font-weight: 300;
+    color: #ffffff;
+    font-size: 1.5rem;
+}
+
+.adres__social p {
+    margin-bottom: 0.8rem;
+    font-family: "Raleway", sans-serif;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+.adres__social a {
+    text-decoration: none;
+}
+
+.adres__social a:last-child {
+    margin-left: 0.8rem;
+}
+
+.adres__social a i {
+    color: #ffffff;
+    font-size: 2rem;
+    transition: color 0.2s linear;
+}
+
+.adres__social a:hover i {
+    color: #000000;
+}
+
+/*back top btn*/
+.back__top {
+    position: fixed;
+    right: 2%;
+    bottom: -3.6rem;
+    z-index: 10;
+    width: 3.6rem;
+    height: 3.6rem;
+    background-color: #f7f7f7;
+    border: 1px solid;
+    border-color: #14aba0;
+    border-radius: 50%;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: bottom 0.2s linear, border-color 0.2s linear;
+}
+
+.back__top--content {
+    position: relative;
+}
+
+.back__top--content span {
+    position: absolute;
+    top: calc(50% - 1rem);
+    left: -7rem;
+    padding: 0.3rem 0.6rem;
+    background-color: #000000;
+    color: #ffffff;
+    font-family: "Raleway", sans-serif;
+    font-weight: 300;
+    font-size: 1.2rem;
+    border-radius: 2px;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.2s linear, visibility 0.2s linear;
+}
+
+.back__top--content span::after {
+    position: absolute;
+    right: -10%;
+    top: calc(50% - 4px);
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: 4px solid rgba(0, 0, 0, 0);
+    border-bottom: 4px solid rgba(0, 0, 0, 0);
+    border-left: 4px solid #000000;
+}
+
+.back__top--content i {
+    font-size: 1.8rem;
+    margin-top: 0.5rem;
+}
+
+.back__top--content:hover span {
+    visibility: visible;
+    opacity: 1;
+}
+
+.back__top:hover {
+    cursor: pointer;
+    border-color: #000000;
+}
+
+.back__top--active {
+    bottom: 0;
 }
 
 /*==============vendor=============*/
