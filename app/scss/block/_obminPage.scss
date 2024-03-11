@@ -1,3 +1,50 @@
 //*mixins*//
 @import "./mixin.scss";
 
+.obmin {
+   background-color: $silver;
+   padding: 4rem 0;
+   &__row {
+      &--title {
+         margin-bottom: 2rem;
+         h3 {
+            font-family: $font;
+            color: $black;
+            font-size: 2.5rem;
+            font-weight: 700;
+         }
+      }
+      &--block {
+         margin-bottom: 2rem;
+         h3 {
+            font-family: $font;
+            color: $black;
+            font-size: 1.7rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+         }
+         P {
+            font-family: $font;
+            color: $black;
+            font-size: 1.7rem;
+            font-weight: 300;
+            margin-bottom: 1rem;
+            &:last-child {
+               margin-bottom: 0;
+            }
+            span {
+               font-weight: 700;
+            }
+            a {
+               text-decoration: none;
+               color: $background;
+               transition: color 0.2s linear;
+               &:hover {
+                  color: $black;
+                  cursor: pointer;
+               }
+            }
+         }
+      }
+   }
+}

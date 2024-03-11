@@ -1544,6 +1544,61 @@ a:focus {
 }
 
 /*obmin page*/
+.obmin {
+    background-color: #f7f7f7;
+    padding: 4rem 0;
+}
+
+.obmin__row--title {
+    margin-bottom: 2rem;
+}
+
+.obmin__row--title h3 {
+    font-family: "Raleway", sans-serif;
+    color: #000000;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.obmin__row--block {
+    margin-bottom: 2rem;
+}
+
+.obmin__row--block h3 {
+    font-family: "Raleway", sans-serif;
+    color: #000000;
+    font-size: 1.7rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.obmin__row--block P {
+    font-family: "Raleway", sans-serif;
+    color: #000000;
+    font-size: 1.7rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+
+.obmin__row--block P:last-child {
+    margin-bottom: 0;
+}
+
+.obmin__row--block P span {
+    font-weight: 700;
+}
+
+.obmin__row--block P a {
+    text-decoration: none;
+    color: #2e9891;
+    transition: color 0.2s linear;
+}
+
+.obmin__row--block P a:hover {
+    color: #000000;
+    cursor: pointer;
+}
+
 /*==============vendor=============*/
 /*slick slider*/
 .slick-slider {
