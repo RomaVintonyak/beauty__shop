@@ -959,6 +959,10 @@ a:focus {
     padding-bottom: 2rem;
 }
 
+.about__us--proNus {
+    margin-top: 0;
+}
+
 .about__title {
     text-align: center;
     border-bottom: 1px solid #000000;
@@ -1352,18 +1356,87 @@ a:focus {
     margin-top: 0.5rem;
 }
 
-.back__top--content:hover span {
-    visibility: visible;
-    opacity: 1;
-}
-
 .back__top:hover {
     cursor: pointer;
     border-color: #000000;
 }
 
+.back__top:hover .back__top--content span {
+    visibility: visible;
+    opacity: 1;
+}
+
 .back__top--active {
     bottom: 0;
+}
+
+/*about page*/
+.about__me {
+    background-color: #f7f7f7;
+    padding-top: 4rem;
+    padding-bottom: 1rem;
+}
+
+.about__me--row {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.me__title {
+    margin-bottom: 1rem;
+}
+
+.me__title h3 {
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: #000000;
+    font-family: "Raleway", sans-serif;
+}
+
+.me__text {
+    margin-bottom: 1rem;
+}
+
+.me__text p {
+    font-family: "Raleway", sans-serif;
+    color: #000000;
+    font-size: 1.7rem;
+    font-weight: 500;
+}
+
+.me__list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.me__list p {
+    margin-bottom: 1rem;
+    font-family: "Raleway", sans-serif;
+    color: #000000;
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
+.me__list p:last-child {
+    margin-bottom: 0;
+}
+
+.me__list li {
+    margin-bottom: 2rem;
+}
+
+.me__list li:last-child {
+    margin-bottom: 0;
+}
+
+.me__list li p {
+    font-weight: 500;
+    font-size: 1.7rem;
+}
+
+.me__list li p span {
+    font-weight: 700;
 }
 
 /*==============vendor=============*/

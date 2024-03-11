@@ -51,18 +51,18 @@
          font-size: 1.8rem;
          margin-top: 0.5rem;
       }
-      &:hover {
+   }
+   &:hover {
+      cursor: pointer;
+      border-color: $black;
+      .back__top--content {
          span {
             visibility: visible;
             opacity: 1;
          }
       }
    }
-   &:hover {
-      cursor: pointer;
-      border-color: $black;
-   }
-   &--active{
+   &--active {
       bottom: 0;
    }
 }
