@@ -1439,6 +1439,111 @@ a:focus {
     font-weight: 700;
 }
 
+/*dostavka page*/
+.dostavka {
+    background-color: #f7f7f7;
+    padding: 4rem 0;
+}
+
+.dostavka__title {
+    margin-bottom: 1rem;
+}
+
+.dostavka__title h3 {
+    font-family: "Raleway", sans-serif;
+    color: #000000;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.dostavka__suptitle {
+    margin-bottom: 1rem;
+}
+
+.dostavka__suptitle h3 {
+    font-family: "Raleway", sans-serif;
+    color: #000000;
+    font-weight: 700;
+    font-size: 1.7rem;
+}
+
+.dostavka__block {
+    margin-bottom: 1rem;
+}
+
+.dostavka__block--title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.dostavka__block--title picture {
+    width: 2%;
+    margin-right: 0.6rem;
+}
+
+.dostavka__block--title span {
+    font-family: "Raleway", sans-serif;
+    color: #000000;
+    font-weight: 700;
+    font-size: 1.7rem;
+}
+
+.dostavka__block--text p {
+    color: #000000;
+    font-weight: 300;
+    font-family: "Raleway", sans-serif;
+    font-size: 1.7rem;
+    margin-bottom: 1rem;
+}
+
+.dostavka__block--text p span {
+    font-weight: 700;
+}
+
+.dostavka__block--text p:last-child {
+    margin-bottom: 0;
+}
+
+.oplata__block {
+    border-top: 1px solid #000000;
+    padding-top: 1rem;
+}
+
+.oplata__block--title {
+    margin-bottom: 1rem;
+}
+
+.oplata__block--title h3 {
+    font-family: "Raleway", sans-serif;
+    color: #000000;
+    font-weight: 700;
+    font-size: 1.7rem;
+}
+
+.oplata__block--text p {
+    font-family: "Raleway", sans-serif;
+    color: #000000;
+    font-weight: 300;
+    font-size: 1.7rem;
+    margin-bottom: 1rem;
+}
+
+.oplata__block--text p:first-child {
+    display: flex;
+    align-items: center;
+}
+
+.oplata__block--text p img {
+    margin-left: 1rem;
+}
+
+.oplata__block--text p:last-child {
+    margin-bottom: 0;
+    font-weight: 700;
+}
+
+/*obmin page*/
 /*==============vendor=============*/
 /*slick slider*/
 .slick-slider {

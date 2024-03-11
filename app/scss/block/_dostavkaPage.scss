@@ -1,0 +1,91 @@
+//*mixins*//
+@import "./mixin.scss";
+
+.dostavka {
+   background-color: $silver;
+   padding: 4rem 0;
+}
+.dostavka__title {
+   margin-bottom: 1rem;
+   h3 {
+      font-family: $font;
+      color: $black;
+      font-size: 2.5rem;
+      font-weight: 700;
+   }
+}
+.dostavka__suptitle {
+   margin-bottom: 1rem;
+   h3 {
+      font-family: $font;
+      color: $black;
+      font-weight: 700;
+      font-size: 1.7rem;
+   }
+}
+.dostavka__block {
+   margin-bottom: 1rem;
+   &--title {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1rem;
+      picture {
+         width: 2%;
+         margin-right: 0.6rem;
+      }
+      span {
+         font-family: $font;
+         color: $black;
+         font-weight: 700;
+         font-size: 1.7rem;
+      }
+   }
+   &--text {
+      p {
+         color: $black;
+         font-weight: 300;
+         font-family: $font;
+         font-size: 1.7rem;
+         margin-bottom: 1rem;
+         span {
+            font-weight: 700;
+         }
+         &:last-child {
+            margin-bottom: 0;
+         }
+      }
+   }
+}
+.oplata__block {
+   border-top: 1px solid $black;
+   padding-top: 1rem;
+   &--title {
+      margin-bottom: 1rem;
+      h3 {
+         font-family: $font;
+         color: $black;
+         font-weight: 700;
+         font-size: 1.7rem;
+      }
+   }
+   &--text {
+      p {
+         font-family: $font;
+         color: $black;
+         font-weight: 300;
+         font-size: 1.7rem;
+         margin-bottom: 1rem;
+         &:first-child {
+            display: flex;
+            align-items: center;
+         }
+         img {
+            margin-left: 1rem;
+         }
+         &:last-child {
+            margin-bottom: 0;
+            font-weight: 700;
+         }
+      }
+   }
+}
