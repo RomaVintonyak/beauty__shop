@@ -1,0 +1,210 @@
+//*mixins*//
+@import "./mixin.scss";
+
+.contact__title {
+   margin-bottom: 6rem;
+   @include tablet {
+      margin-bottom: 4rem;
+   }
+   @include mobile {
+      margin-bottom: 2rem;
+   }
+   &--title {
+      text-align: center;
+   }
+   h1 {
+      text-transform: uppercase;
+      font-family: $font;
+      color: $black;
+      font-size: 2.5rem;
+      font-weight: 700;
+      border-bottom: 1px solid $main;
+      display: inline;
+   }
+}
+.contact__block {
+   margin-bottom: 6rem;
+   @include tablet {
+      margin-bottom: 4rem;
+   }
+   @include mobile {
+      margin-bottom: 2rem;
+   }
+   &--row {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+   }
+}
+.contact__address {
+   width: 46%;
+   &--line {
+      margin-bottom: 2rem;
+      display: flex;
+      align-items: center;
+      &:last-child {
+         margin-bottom: 0;
+      }
+      i {
+         color: $main;
+         font-size: 2.5rem;
+         margin-right: 1rem;
+      }
+      span {
+         color: $black;
+         font-weight: 500;
+         font-family: $font;
+         font-size: 1.7rem;
+      }
+   }
+}
+.contact__form {
+   width: 46%;
+   &--block {
+      width: 100%;
+      position: relative;
+      margin-bottom: 4.5rem;
+      i {
+         position: absolute;
+         bottom: 0;
+         left: 0;
+         font-size: 2.5rem;
+         color: $main;
+      }
+      input {
+         font-weight: 500;
+         font-size: 1.7rem;
+         color: $black;
+         font-family: $font;
+         position: absolute;
+         bottom: 0;
+         right: 0;
+         width: 93%;
+         height: 3.5rem;
+         border: none;
+         background-color: transparent;
+         border-bottom: 1px solid $silver-b;
+         &:focus {
+            outline: none;
+            border-bottom-color: $background;
+         }
+         @include mobile {
+            font-size: 1.6rem;
+         }
+      }
+      label {
+         position: relative;
+         top: -1rem;
+         left: 9%;
+         font-size: 1.7rem;
+         font-weight: 500;
+         color: $black;
+         font-family: $font;
+         transition: font-size 0.1s linear, top 0.1s linear;
+      }
+      textarea {
+         font-weight: 500;
+         font-size: 1.7rem;
+         color: $black;
+         font-family: $font;
+         position: absolute;
+         bottom: 0;
+         right: 0;
+         width: 93%;
+         height: 4rem;
+         border: none;
+         background-color: transparent;
+         border-bottom: 1px solid $silver-b;
+         resize: none;
+         &:focus {
+            outline: none;
+            border-bottom-color: $background;
+         }
+         @include mobile {
+            font-size: 1.6rem;
+         }
+      }
+      @include mobile {
+         margin-bottom: 3.5rem;
+      }
+   }
+   &--button {
+      margin-bottom: 1.5rem;
+      button {
+         border: none;
+         background-color: transparent;
+         font-family: $font;
+         font-size: 1.7rem;
+         color: $black;
+         font-weight: 500;
+         margin: 0;
+         padding: 1.5rem;
+         background-color: $silver;
+         border: 1px solid $silver;
+         transition: background-color 0.2s linear, color 0.2s linear;
+         i {
+            margin-left: 0.5rem;
+            color: $black;
+            font-size: 1.7rem;
+            transition: color 0.2s linear;
+         }
+         &:hover {
+            background-color: $background;
+            color: $white;
+            cursor: pointer;
+            i {
+               color: $white;
+            }
+         }
+         &:active {
+            transform: scale(0.97);
+         }
+      }
+      @include tablet {
+         margin-bottom: 1rem;
+      }
+   }
+}
+.error__text {
+   width: 100%;
+   height: 2.2rem;
+   font-family: $font;
+   font-weight: 500;
+   font-size: 1.7rem;
+   color: $background;
+}
+#name:focus ~ label[for="name"] {
+   font-size: 1.2rem;
+   top: -2.7rem;
+}
+#email:focus ~ label[for="email"] {
+   font-size: 1.2rem;
+   top: -2.7rem;
+}
+#phone:focus ~ label[for="phone"] {
+   font-size: 1.2rem;
+   top: -2.7rem;
+}
+#message:focus ~ label[for="message"] {
+   font-size: 1.2rem;
+   top: -3.5rem;
+}
+.contact__line {
+   margin-bottom: 6rem;
+   @include tablet {
+      margin-bottom: 4rem;
+   }
+   @include mobile {
+      margin-bottom: 2rem;
+   }
+   &--line {
+      width: 100%;
+      height: 0.1rem;
+      hr {
+         background-color: $main;
+         width: 100%;
+         height: 100%;
+         display: block;
+      }
+   }
+}

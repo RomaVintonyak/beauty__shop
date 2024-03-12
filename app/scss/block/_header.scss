@@ -39,6 +39,9 @@
       &:last-child {
          margin-right: 0;
       }
+      .active {
+         color: $background;
+      }
    }
    &--link {
       text-decoration: none;
@@ -161,24 +164,24 @@
       }
    }
 }
-.header__product{
+.header__product {
    width: 100%;
    background-color: $background;
 }
-.product__menu{
+.product__menu {
    margin: 0;
    padding: 0;
    list-style-type: none;
    display: flex;
-   &--item{
+   &--item {
       width: 12.5%;
       height: 4rem;
       transition: background-color 0.2s linear;
-      &:hover{
+      &:hover {
          background-color: $main;
       }
    }
-   &--link{
+   &--link {
       text-decoration: none;
       display: flex;
       align-items: center;
