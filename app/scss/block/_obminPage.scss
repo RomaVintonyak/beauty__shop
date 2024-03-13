@@ -22,6 +22,15 @@
             font-size: 1.7rem;
             font-weight: 700;
             margin-bottom: 1rem;
+            a{
+               color: $background;
+               margin-left: 0.5rem;
+               text-decoration: underline;
+               transition: color 0.2s linear;
+               &:hover{
+                  color: $black;
+               }
+            }
          }
          P {
             font-family: $font;
@@ -36,9 +45,11 @@
                font-weight: 700;
             }
             a {
-               text-decoration: none;
+               text-decoration: underline;
                color: $background;
                transition: color 0.2s linear;
+               font-weight: 700;
+               margin: 0 0.5rem;
                &:hover {
                   color: $black;
                   cursor: pointer;

@@ -1572,6 +1572,17 @@ a:focus {
     margin-bottom: 1rem;
 }
 
+.obmin__row--block h3 a {
+    color: #2e9891;
+    margin-left: 0.5rem;
+    text-decoration: underline;
+    transition: color 0.2s linear;
+}
+
+.obmin__row--block h3 a:hover {
+    color: #000000;
+}
+
 .obmin__row--block P {
     font-family: "Raleway", sans-serif;
     color: #000000;
@@ -1589,9 +1600,11 @@ a:focus {
 }
 
 .obmin__row--block P a {
-    text-decoration: none;
+    text-decoration: underline;
     color: #2e9891;
     transition: color 0.2s linear;
+    font-weight: 700;
+    margin: 0 0.5rem;
 }
 
 .obmin__row--block P a:hover {
@@ -1884,6 +1897,193 @@ a:focus {
     color: #000000;
     font-weight: 700;
     font-size: 2.5rem;
+}
+
+/*modal*/
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2000;
+    width: 100%;
+    height: 100vh;
+    opacity: 1;
+    transform-origin: center center;
+    transform: scale(1);
+    visibility: visible;
+    transition: transform 0.5s linear, opacity 0.5s linear, visibility 0.5s linear;
+}
+
+.modal__open {
+    transform: scale(1);
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal__mask {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal__content {
+    position: relative;
+    width: 44%;
+    background-color: #ffffff;
+    padding: 2rem;
+}
+
+.modal__content--close {
+    text-align: right;
+}
+
+.modal__content--close button {
+    border: none;
+    background-color: transparent;
+}
+
+.modal__content--close button i {
+    font-size: 2.6rem;
+    color: #d9d9d9;
+    transition: color 0.2s linear;
+}
+
+.modal__content--close button:focus {
+    outline: none;
+}
+
+.modal__content--close button:hover {
+    cursor: pointer;
+}
+
+.modal__content--close button:hover i {
+    color: #000000;
+}
+
+.modal__content--tabs {
+    margin-bottom: -1px;
+}
+
+.modal__content--tabs button {
+  /*background-color: transparent;
+         font-family: $font;
+         font-weight: 700;
+         font-size: 1.7rem;
+         color: $black;
+         padding: 0 2.5rem;
+         border: 1px solid $silver-b;
+         margin-right: -5px;
+         height: 4.6rem;
+         line-height: 4.7rem;*/
+}
+
+.modal__content--body {
+    border: 1px solid #d9d9d9;
+    padding: 3rem;
+}
+
+.switch__tabs {
+    background-color: transparent;
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 1.7rem;
+    color: #000000;
+    padding: 0 2.5rem;
+    border: 1px solid #d9d9d9;
+    margin-right: -5px;
+    height: 4.6rem;
+    line-height: 4.7rem;
+}
+
+.switch__tabs--active {
+    border-bottom: 0;
+    background-color: #ffffff;
+}
+
+.switch__tabs--active:hover {
+    cursor: default;
+}
+
+.login__form--block {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 0.3rem;
+}
+
+.login__form--block label {
+    font-family: "Raleway", sans-serif;
+    color: #000000;
+    font-weight: 300;
+    font-size: 1.7rem;
+    margin-bottom: 0.5rem;
+}
+
+.login__form--block input {
+    border: 1px solid #d9d9d9;
+    width: 100%;
+    height: 4rem;
+    padding-left: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.login__form--block input:focus {
+    border: 1px solid #14aba0;
+}
+
+.login__form--block p {
+    font-weight: 500;
+    font-family: "Raleway", sans-serif;
+    font-size: 1.3rem;
+    color: #14aba0;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.login__form--button button {
+    background-color: #d9d9d9;
+    font-family: "Raleway", sans-serif;
+    font-size: 1.7rem;
+    color: #000000;
+    font-weight: 500;
+    margin: 0;
+    padding: 1.2rem 1rem;
+    border: 1px solid #d9d9d9;
+    transition: background-color 0.2s linear, color 0.2s linear;
+}
+
+.login__form--button button i {
+    margin-left: 0.5rem;
+    color: #000000;
+    font-size: 1.7rem;
+    transition: color 0.2s linear;
+}
+
+.login__form--button button:hover {
+    background-color: #2e9891;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.login__form--button button:hover i {
+    color: #ffffff;
+}
+
+.login__form--button button:active {
+    transform: scale(0.97);
+}
+
+.login__form--button button:last-child {
+    margin-left: 1.5rem;
+    background-color: transparent;
+    border: none;
+}
+
+.login__form--button button:last-child:hover {
+    color: #2e9891;
 }
 
 /*==============vendor=============*/
