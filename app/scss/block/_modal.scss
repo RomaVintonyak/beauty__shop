@@ -8,10 +8,10 @@
    z-index: 2000;
    width: 100%;
    height: 100vh;
-   opacity: 1;
+   opacity: 0;
    transform-origin: center center;
-   transform: scale(1);
-   visibility: visible;
+   transform: scale(0);
+   visibility: hidden;
    transition: transform 0.5s linear, opacity 0.5s linear, visibility 0.5s linear;
 }
 .modal__open {
@@ -55,26 +55,14 @@
    }
    &--tabs {
       margin-bottom: -1px;
-      button {
-         /*background-color: transparent;
-         font-family: $font;
-         font-weight: 700;
-         font-size: 1.7rem;
-         color: $black;
-         padding: 0 2.5rem;
-         border: 1px solid $silver-b;
-         margin-right: -5px;
-         height: 4.6rem;
-         line-height: 4.7rem;*/
-      }
    }
    &--body {
       border: 1px solid $silver-b;
       padding: 3rem;
    }
 }
-.switch__tabs{
-   background-color: transparent;
+.switch__tabs {
+   background-color: $white;
    font-family: $font;
    font-weight: 700;
    font-size: 1.7rem;
@@ -84,12 +72,17 @@
    margin-right: -5px;
    height: 4.6rem;
    line-height: 4.7rem;
-   &--active{
+   &--active {
       border-bottom: 0;
-      background-color: $white;
-      &:hover{
+      &:hover {
          cursor: default;
       }
+   }
+}
+.modal__login {
+   display: none;
+   &--active {
+      display: block;
    }
 }
 .login__form {
@@ -152,14 +145,104 @@
          &:active {
             transform: scale(0.97);
          }
-         &:last-child{
+         &:last-child {
             margin-left: 1.5rem;
             background-color: transparent;
             border: none;
-            &:hover{
+            &:hover {
                color: $background;
             }
          }
+      }
+   }
+}
+.modal__register {
+   display: none;
+   &--active {
+      display: block;
+   }
+}
+.register__form {
+   &--block {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin-bottom: 0.3rem;
+      label {
+         font-family: $font;
+         color: $black;
+         font-weight: 300;
+         font-size: 1.7rem;
+         margin-bottom: 0.5rem;
+      }
+      input {
+         border: 1px solid $silver-b;
+         width: 100%;
+         height: 4rem;
+         padding-left: 1rem;
+         margin-bottom: 0.5rem;
+         &:focus {
+            border: 1px solid $main;
+         }
+      }
+      p {
+         font-weight: 500;
+         font-family: $font;
+         font-size: 1.3rem;
+         color: $main;
+         opacity: 0;
+         visibility: hidden;
+      }
+   }
+   &--button {
+      button {
+         background-color: $silver-b;
+         font-family: $font;
+         font-size: 1.7rem;
+         color: $black;
+         font-weight: 500;
+         margin: 0;
+         padding: 1.2rem 1rem;
+         border: 1px solid $silver-b;
+         transition: background-color 0.2s linear, color 0.2s linear;
+         i {
+            margin-left: 0.5rem;
+            color: $black;
+            font-size: 1.7rem;
+            transition: color 0.2s linear;
+         }
+         &:hover {
+            background-color: $background;
+            color: $white;
+            cursor: pointer;
+            i {
+               color: $white;
+            }
+         }
+         &:active {
+            transform: scale(0.97);
+         }
+      }
+   }
+}
+.register__oferta {
+   margin-top: 0.5rem;
+   p {
+      font-family: $font;
+      font-weight: 300;
+      color: $black;
+      font-size: 1.3rem;
+   }
+   a {
+      font-family: $font;
+      font-weight: 500;
+      color: $black;
+      font-size: 1.3rem;
+      text-decoration: none;
+      transition: color 0.2s linear;
+      &:hover {
+         color: $background;
+         cursor: pointer;
       }
    }
 }

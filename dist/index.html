@@ -75,7 +75,7 @@
               <span></span>
               <span></span>
             </div><!--/.burger-->
-            <a class="nav__login--popup" href="#js/modal.js">
+            <a class="_popup nav__login--popup" href="#">
               <i class="fas fa-user"></i>
               <span>Вхід</span>
             </a>
@@ -742,11 +742,11 @@
           </button>
         </div><!--/.close-->
         <div class="modal__content--tabs">
-          <button type="button" class="switch__tabs switch__tabs--active">Вхід</button>
-          <button type="button" class="switch__tabs">Реєстрація</button>
+          <button type="button" class="_login switch__tabs switch__tabs--active">Вхід</button>
+          <button type="button" class="_register switch__tabs">Реєстрація</button>
         </div><!--/.-->
         <div class="modal__content--body">
-          <div class="modal__login">
+          <div class="modal__login modal__login--active">
             <form data-action="#" id="loginForm" class="login__form">
               <div class="login__form--block">
                 <label for="emailAuth">Е-пошта</label>
@@ -756,7 +756,7 @@
               <div class="login__form--block">
                 <label for="paswordAuth">Пароль</label>
                 <input type="password" id="paswordAuth" name="paswordAuth">
-                <p class="error__password--auth">Вкажіть пароль</p>
+                <p class="error__password--auth">Вкажіть пароль (не менше 10 символів)</p>
               </div><!--/.block-->
               <div class="login__form--button">
                 <button id="sendAuth" type="button">
@@ -769,6 +769,39 @@
               </div>
             </form><!--/.login__form-->
           </div><!--/.modal__login-->
+          <div class="modal__register">
+            <form data-action="#" id="registerForm" class="register__form">
+              <div class="register__form--block">
+                <label for="nameRegister">Ім'я та прізвище</label>
+                <input type="text" id="nameRegister" name="nameRegister">
+                <p class="error__name--register">Введіть ім'я(не менше 6 символів)</p>
+              </div><!--/.block-->
+              <div class="register__form--block">
+                <label for="emailRegister">Е-пошта</label>
+                <input type="email" id="emailRegister" name="emailRegister">
+                <p class="error__mail--register">Введіть коректну email адресу...</p>
+              </div><!--/.block-->
+              <div class="register__form--block">
+                <label for="paswordRegister">Пароль</label>
+                <input type="password" id="paswordRegister" name="paswordRegister">
+                <p class="error__password--register">Вкажіть пароль (не менше 10 символів)</p>
+              </div><!--/.block-->
+              <div class="register__form--button">
+                <button id="sendRegister" type="button">
+                  Відправити
+                  <i class="fas fa-paper-plane"></i>
+                </button>
+              </div><!--/.button-->
+            </form><!--/.register__form-->
+            <div class="register__oferta">
+              <p>
+                Підтверджуючи реєстрацію, я приймаю умови
+              </p>
+              <a href="pages/ugoda.html" target="_blank">
+                користувальницької угоди
+              </a>
+            </div><!--/.register__oferta-->
+          </div><!--/.modal__register-->
         </div><!--/.body-->
       </div><!--modal__content-->
     </div><!--/.modak__mask-->

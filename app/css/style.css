@@ -1907,10 +1907,10 @@ a:focus {
     z-index: 2000;
     width: 100%;
     height: 100vh;
-    opacity: 1;
+    opacity: 0;
     transform-origin: center center;
-    transform: scale(1);
-    visibility: visible;
+    transform: scale(0);
+    visibility: hidden;
     transition: transform 0.5s linear, opacity 0.5s linear, visibility 0.5s linear;
 }
 
@@ -1967,26 +1967,13 @@ a:focus {
     margin-bottom: -1px;
 }
 
-.modal__content--tabs button {
-  /*background-color: transparent;
-         font-family: $font;
-         font-weight: 700;
-         font-size: 1.7rem;
-         color: $black;
-         padding: 0 2.5rem;
-         border: 1px solid $silver-b;
-         margin-right: -5px;
-         height: 4.6rem;
-         line-height: 4.7rem;*/
-}
-
 .modal__content--body {
     border: 1px solid #d9d9d9;
     padding: 3rem;
 }
 
 .switch__tabs {
-    background-color: transparent;
+    background-color: #ffffff;
     font-family: "Raleway", sans-serif;
     font-weight: 700;
     font-size: 1.7rem;
@@ -2000,11 +1987,18 @@ a:focus {
 
 .switch__tabs--active {
     border-bottom: 0;
-    background-color: #ffffff;
 }
 
 .switch__tabs--active:hover {
     cursor: default;
+}
+
+.modal__login {
+    display: none;
+}
+
+.modal__login--active {
+    display: block;
 }
 
 .login__form--block {
@@ -2084,6 +2078,108 @@ a:focus {
 
 .login__form--button button:last-child:hover {
     color: #2e9891;
+}
+
+.modal__register {
+    display: none;
+}
+
+.modal__register--active {
+    display: block;
+}
+
+.register__form--block {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 0.3rem;
+}
+
+.register__form--block label {
+    font-family: "Raleway", sans-serif;
+    color: #000000;
+    font-weight: 300;
+    font-size: 1.7rem;
+    margin-bottom: 0.5rem;
+}
+
+.register__form--block input {
+    border: 1px solid #d9d9d9;
+    width: 100%;
+    height: 4rem;
+    padding-left: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.register__form--block input:focus {
+    border: 1px solid #14aba0;
+}
+
+.register__form--block p {
+    font-weight: 500;
+    font-family: "Raleway", sans-serif;
+    font-size: 1.3rem;
+    color: #14aba0;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.register__form--button button {
+    background-color: #d9d9d9;
+    font-family: "Raleway", sans-serif;
+    font-size: 1.7rem;
+    color: #000000;
+    font-weight: 500;
+    margin: 0;
+    padding: 1.2rem 1rem;
+    border: 1px solid #d9d9d9;
+    transition: background-color 0.2s linear, color 0.2s linear;
+}
+
+.register__form--button button i {
+    margin-left: 0.5rem;
+    color: #000000;
+    font-size: 1.7rem;
+    transition: color 0.2s linear;
+}
+
+.register__form--button button:hover {
+    background-color: #2e9891;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.register__form--button button:hover i {
+    color: #ffffff;
+}
+
+.register__form--button button:active {
+    transform: scale(0.97);
+}
+
+.register__oferta {
+    margin-top: 0.5rem;
+}
+
+.register__oferta p {
+    font-family: "Raleway", sans-serif;
+    font-weight: 300;
+    color: #000000;
+    font-size: 1.3rem;
+}
+
+.register__oferta a {
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    color: #000000;
+    font-size: 1.3rem;
+    text-decoration: none;
+    transition: color 0.2s linear;
+}
+
+.register__oferta a:hover {
+    color: #2e9891;
+    cursor: pointer;
 }
 
 /*==============vendor=============*/
