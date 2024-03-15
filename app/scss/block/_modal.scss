@@ -29,7 +29,7 @@
 }
 .modal__content {
    position: relative;
-   width: 44%;
+   width: 38%;
    background-color: $white;
    padding: 2rem;
    &--close {
@@ -59,6 +59,9 @@
    &--body {
       border: 1px solid $silver-b;
       padding: 3rem;
+   }
+   &--active{
+      display: none;
    }
 }
 .switch__tabs {
@@ -243,6 +246,119 @@
       &:hover {
          color: $background;
          cursor: pointer;
+      }
+   }
+}
+.modal__recover {
+   display: none;
+   width: 38%;
+   background-color: $white;
+   padding: 2rem;
+   &--active{
+      display: block;
+   }
+}
+.recover__close {
+   text-align: right;
+   button {
+      border: none;
+      background-color: transparent;
+      i {
+         font-size: 2.6rem;
+         color: $silver-b;
+         transition: color 0.2s linear;
+      }
+      &:focus {
+         outline: none;
+      }
+      &:hover {
+         cursor: pointer;
+         i {
+            color: $black;
+         }
+      }
+   }
+}
+.recover__title {
+   text-align-last: left;
+   margin-bottom: 1rem;
+   h3 {
+      font-family: $font;
+      color: $black;
+      font-weight: 500;
+      font-size: 2.7rem;
+   }
+}
+.recover__text {
+   text-align: left;
+   margin-bottom: 1rem;
+   p {
+      font-family: $font;
+      color: $black;
+      font-size: 1.7rem;
+      font-weight: 300;
+   }
+}
+.revover__form {
+   &--block {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin-bottom: 0.3rem;
+      label {
+         font-family: $font;
+         color: $black;
+         font-weight: 300;
+         font-size: 1.7rem;
+         margin-bottom: 0.5rem;
+      }
+      input {
+         border: 1px solid $silver-b;
+         width: 100%;
+         height: 4rem;
+         padding-left: 1rem;
+         margin-bottom: 0.5rem;
+         &:focus {
+            border: 1px solid $main;
+         }
+      }
+      p {
+         font-weight: 500;
+         font-family: $font;
+         font-size: 1.3rem;
+         color: $main;
+         opacity: 0;
+         visibility: hidden;
+      }
+   }
+   &--button {
+      button {
+         background-color: $silver-b;
+         font-family: $font;
+         font-size: 1.7rem;
+         color: $black;
+         font-weight: 500;
+         margin: 0;
+         padding: 1.2rem 1rem;
+         border: 1px solid $silver-b;
+         transition: background-color 0.2s linear, color 0.2s linear;
+         i {
+            margin-left: 0.5rem;
+            color: $black;
+            font-size: 1.7rem;
+            transition: color 0.2s linear;
+         }
+         &:hover {
+            background-color: $background;
+            color: $white;
+            cursor: pointer;
+            i {
+               color: $white;
+            }
+         }
+         &:active {
+            transform: scale(0.97);
+         }
       }
    }
 }
