@@ -1899,6 +1899,96 @@ a:focus {
     font-size: 2.5rem;
 }
 
+.promotion__row--content p {
+    margin-bottom: 0.5rem;
+    font-family: "Raleway", sans-serif;
+    color: #000000;
+    font-weight: 500;
+    font-size: 1.7rem;
+}
+
+.promotion__row--content p:last-child {
+    margin-bottom: 0;
+}
+
+/*dogovir page*/
+.oferta {
+    padding: 4rem 0;
+    background-color: #f7f7f7;
+}
+
+.oferta__row--title {
+    margin-bottom: 2rem;
+}
+
+.oferta__row--title h2 {
+    font-family: "Raleway", sans-serif;
+    color: #000000;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 0.2rem;
+}
+
+.oferta__row--title h3 {
+    font-family: "Raleway", sans-serif;
+    color: #000000;
+    font-size: 1.7rem;
+    font-weight: 500;
+}
+
+.oferta__row--text {
+    margin-bottom: 2rem;
+}
+
+.oferta__row--text p {
+    color: #000000;
+    font-family: "Raleway", sans-serif;
+    font-weight: 300;
+    font-size: 1.7rem;
+}
+
+.oferta__row--text p a {
+    text-decoration: none;
+    color: #2e9891;
+    font-weight: 500;
+    transition: color 0.2s linear;
+}
+
+.oferta__row--text p a:hover {
+    color: #000000;
+}
+
+.oferta__row--list {
+    margin: 0;
+    padding: 0 0 0 1.5rem;
+    list-style-type: decimal;
+}
+
+.oferta__row--list li {
+    margin-bottom: 1rem;
+}
+
+.oferta__row--list li:last-child {
+    margin-bottom: 0;
+}
+
+.oferta__row--list li p {
+    margin-left: -1.5rem;
+    margin-bottom: 0.3rem;
+    font-family: "Raleway", sans-serif;
+    color: #000000;
+    font-weight: 300;
+    font-size: 1.7rem;
+}
+
+.oferta__row--list li p:first-child {
+    margin-left: 0;
+}
+
+.oferta__row--list li p:last-child {
+    margin-bottom: 0;
+}
+
 /*modal*/
 .modal {
     position: fixed;
