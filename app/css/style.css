@@ -582,7 +582,7 @@ a:focus {
 }
 
 .product__menu--item {
-    width: 12.5%;
+    width: 10%;
     height: 4rem;
     transition: background-color 0.2s linear;
 }
@@ -602,6 +602,10 @@ a:focus {
     font-family: "Raleway", sans-serif;
     font-size: 1.7rem;
     font-weight: 500;
+}
+
+.active__item {
+    background-color: #14aba0;
 }
 
 /*burger button*/
@@ -903,6 +907,24 @@ a:focus {
     border-radius: 4px;
     padding: 1rem;
     margin: 0 1rem;
+    position: relative;
+}
+
+.product__card--akcia {
+    display: none;
+    position: absolute;
+    z-index: 5;
+    top: 0;
+    left: 0;
+    padding: 0.5rem 1rem;
+    background-color: #2e9891;
+}
+
+.product__card--akcia span {
+    color: #ffffff;
+    font-family: "Raleway", sans-serif;
+    font-weight: 300;
+    font-size: 1.7rem;
 }
 
 .product__card--img {
@@ -1900,15 +1922,19 @@ a:focus {
 }
 
 .promotion__row--content p {
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
     font-family: "Raleway", sans-serif;
     color: #000000;
-    font-weight: 500;
+    font-weight: 300;
     font-size: 1.7rem;
 }
 
 .promotion__row--content p:last-child {
     margin-bottom: 0;
+}
+
+.promotion__row--content p span {
+    font-weight: 500;
 }
 
 /*dogovir page*/
@@ -1986,6 +2012,96 @@ a:focus {
 }
 
 .oferta__row--list li p:last-child {
+    margin-bottom: 0;
+}
+
+/*catalog page*/
+.catalog {
+    padding: 4rem 0;
+}
+
+.catalog__row--title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.catalog__row--content {
+    margin-top: 4rem;
+}
+
+.catalog__title h3 {
+    font-family: "Raleway", sans-serif;
+    color: #000000;
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
+.catalog__sort {
+    display: flex;
+    align-items: center;
+}
+
+.catalog__sort h4 {
+    font-family: "Raleway", sans-serif;
+    color: #000000;
+    font-weight: 300;
+    font-size: 1.7rem;
+}
+
+.catalog__sort--radio {
+    margin-left: 1rem;
+    display: flex;
+    border: 1px solid #d9d9d9;
+}
+
+.catalog__sort--radio input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.catalog__sort--radio input:checked + label {
+    background-color: #14aba0;
+    color: #ffffff;
+}
+
+.catalog__sort--radio label {
+    padding: 0.5rem 1.5rem;
+    display: block;
+    font-family: "Raleway", sans-serif;
+    color: #000000;
+    font-weight: 300;
+    font-size: 1.7rem;
+    background-color: #f7f7f7;
+}
+
+.catalog__sort--radio label:hover {
+    cursor: pointer;
+}
+
+.catalog__sort--radio label:nth-child(4) {
+    border-left: 1px solid #d9d9d9;
+    border-right: 1px solid #d9d9d9;
+}
+
+.catalog__sort--radio label:nth-child(6) {
+    border-right: 1px solid #d9d9d9;
+}
+
+.catalog__tovariv {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.catalog__tovariv .product__card {
+    width: 22%;
+    margin-bottom: 4rem;
+}
+
+.catalog__tovariv .product__card:last-child {
     margin-bottom: 0;
 }
 

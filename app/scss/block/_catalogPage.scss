@@ -1,0 +1,78 @@
+//*mixins*//
+@import "./mixin.scss";
+
+.catalog {
+   padding: 4rem 0;
+   &__row {
+      &--title {
+         display: flex;
+         align-items: center;
+         justify-content: space-between;
+      }
+      &--content{
+         margin-top: 4rem;
+      }
+   }
+}
+.catalog__title {
+   h3 {
+      font-family: $font;
+      color: $black;
+      font-weight: 700;
+      font-size: 2.5rem;
+   }
+}
+.catalog__sort {
+   display: flex;
+   align-items: center;
+   h4 {
+      font-family: $font;
+      color: $black;
+      font-weight: 300;
+      font-size: 1.7rem;
+   }
+   &--radio {
+      margin-left: 1rem;
+      display: flex;
+      border: 1px solid $silver-b;
+      input {
+         appearance: none;
+         &:checked + label {
+            background-color: $main;
+            color: $white;
+         }
+      }
+      label {
+         padding: 0.5rem 1.5rem;
+         display: block;
+         font-family: $font;
+         color: $black;
+         font-weight: 300;
+         font-size: 1.7rem;
+         background-color: $silver;
+         &:hover {
+            cursor: pointer;
+         }
+         &:nth-child(4) {
+            border-left: 1px solid $silver-b;
+            border-right: 1px solid $silver-b;
+         }
+         &:nth-child(6) {
+            border-right: 1px solid $silver-b;
+         }
+      }
+   }
+}
+.catalog__tovariv{
+   display: flex;
+   align-items: flex-start;
+   justify-content: space-between;
+   flex-wrap: wrap;
+   .product__card{
+      width: 22%;
+      margin-bottom: 4rem;
+      &:last-child{
+         margin-bottom: 0;
+      }
+   }
+}
