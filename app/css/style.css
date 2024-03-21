@@ -192,6 +192,10 @@ template {
     text-align: center;
 }
 
+.hide {
+    display: none;
+}
+
 .mt-6 {
     margin-top: 6rem;
 }
@@ -929,6 +933,8 @@ a:focus {
 
 .product__card--img {
     margin-bottom: 1rem;
+    max-height: 250px;
+    overflow: hidden;
 }
 
 .product__card--title {
@@ -2092,7 +2098,6 @@ a:focus {
 .catalog__tovariv {
     display: flex;
     align-items: flex-start;
-    justify-content: space-between;
     flex-wrap: wrap;
 }
 
@@ -2103,6 +2108,34 @@ a:focus {
 
 .catalog__tovariv .product__card:last-child {
     margin-bottom: 0;
+}
+
+.pagination {
+    margin-top: 4rem;
+    text-align: center;
+}
+
+.pagination__link {
+    display: inline-block;
+    font-family: "Raleway", sans-serif;
+    text-decoration: none;
+    color: #000000;
+    font-size: 1.5rem;
+    border: 1px solid #d9d9d9;
+    width: 3rem;
+    height: 3rem;
+    background-color: #f7f7f7;
+    line-height: 2.8rem;
+    margin-left: 0.2rem;
+}
+
+.pagination__link:first-child {
+    margin-left: 0;
+}
+
+.pagination__link--current {
+    background-color: #2e9891;
+    color: #ffffff;
 }
 
 /*modal*/

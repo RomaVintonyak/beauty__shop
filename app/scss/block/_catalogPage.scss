@@ -66,13 +66,36 @@
 .catalog__tovariv{
    display: flex;
    align-items: flex-start;
-   justify-content: space-between;
    flex-wrap: wrap;
    .product__card{
       width: 22%;
       margin-bottom: 4rem;
       &:last-child{
          margin-bottom: 0;
+      }
+   }
+}
+.pagination{
+   margin-top: 4rem;
+   text-align: center;
+   &__link{
+      display: inline-block;
+      font-family: $font;
+      text-decoration: none;
+      color: $black;
+      font-size: 1.5rem;
+      border: 1px solid $silver-b;
+      width: 3rem;
+      height: 3rem;
+      background-color: $silver;
+      line-height: 2.8rem;
+      margin-left: 0.2rem;
+      &:first-child{
+         margin-left: 0;
+      }
+      &--current{
+         background-color: $background;
+         color: $white;
       }
    }
 }
