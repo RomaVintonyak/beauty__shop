@@ -1,0 +1,143 @@
+//*mixins*//
+@import "./mixin.scss";
+
+.tovar {
+   padding: 4rem 0;
+   &__title {
+      margin-bottom: 2rem;
+      h3 {
+         color: $black;
+         font-family: $font;
+         font-weight: 500;
+         font-size: 2.5rem;
+         margin-bottom: 0.5rem;
+      }
+      p {
+         color: $main;
+         font-family: $font;
+         font-size: 1.7rem;
+         font-weight: 300;
+      }
+   }
+   &__block {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      &--galery {
+         width: 49%;
+      }
+      &--opys{
+         width: 49%;
+      }
+   }
+}
+.img__b {
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-bottom: 2rem;
+}
+.img__sm {
+   display: flex;
+   justify-content: center;
+   a {
+      display: block;
+      width: 20%;
+      margin-right: 1rem;
+      text-decoration: none;
+      &:last-child {
+         margin-right: 0;
+      }
+   }
+}
+.block__price{
+   margin-bottom: 1.5rem;
+   span{
+      font-family: $font;
+      font-weight: 500;
+      color: $black;
+      font-size: 1.7rem;
+   }
+}
+.block__title{
+   margin-bottom: 0.5rem;
+   p{
+      font-family: $font;
+      font-weight: 500;
+      color: $black;
+      font-size: 1.7rem;
+   }
+}
+.block__size{
+   margin-bottom: 1.5rem;
+   input{
+      appearance: none;
+      display: none;
+      &:checked + label {
+         background-color: $main;
+         color: $white;
+      }
+   }
+   label{
+      padding: 0.5rem 1.5rem;
+      font-family: $font;
+      color: $black;
+      font-weight: 500;
+      font-size: 1.7rem;
+      background-color: $silver-b;
+      display: inline-block;
+      &:hover {
+         cursor: pointer;
+      }
+   }
+}
+.block__btn{
+   margin-bottom: 1.5rem;
+   button {
+      font-family: $font;
+      font-weight: 500;
+      color: $white;
+      font-size: 1.8rem;
+      background-color: $main;
+      padding: 1rem 2rem;
+      transition: background-color 0.1s linear;
+      &:hover {
+         background-color: $background;
+      }
+      &:active {
+         transform: scale(0.98);
+      }
+   }
+}
+.block__opys{
+   border-top: 1px solid $black;
+   border-bottom: 1px solid $black;
+   padding: 1rem 0;
+   &--option{
+      h3{
+         font-family: $font;
+         font-weight: 500;
+         color: $black;
+         font-size: 1.7rem;
+         margin-bottom: 1rem;
+      }
+      div{
+         display: flex;
+         margin-bottom: 1rem;
+         &:last-child{
+            margin-bottom: 0;
+         }
+         p{
+            font-family: $font;
+            font-weight: 500;
+            color: $black;
+            font-size: 1.3rem;
+            &:first-child{
+               font-weight: 300;
+               width: 25%;
+            }
+         }
+      }
+   }
+}

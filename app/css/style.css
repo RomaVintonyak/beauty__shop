@@ -2137,6 +2137,177 @@ a:focus {
     color: #ffffff;
 }
 
+/*tovar page*/
+.tovar {
+    padding: 4rem 0;
+}
+
+.tovar__title {
+    margin-bottom: 2rem;
+}
+
+.tovar__title h3 {
+    color: #000000;
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.tovar__title p {
+    color: #14aba0;
+    font-family: "Raleway", sans-serif;
+    font-size: 1.7rem;
+    font-weight: 300;
+}
+
+.tovar__block {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.tovar__block--galery {
+    width: 49%;
+}
+
+.tovar__block--opys {
+    width: 49%;
+}
+
+.img__b {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.img__sm {
+    display: flex;
+    justify-content: center;
+}
+
+.img__sm a {
+    display: block;
+    width: 20%;
+    margin-right: 1rem;
+    text-decoration: none;
+}
+
+.img__sm a:last-child {
+    margin-right: 0;
+}
+
+.block__price {
+    margin-bottom: 1.5rem;
+}
+
+.block__price span {
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    color: #000000;
+    font-size: 1.7rem;
+}
+
+.block__title {
+    margin-bottom: 0.5rem;
+}
+
+.block__title p {
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    color: #000000;
+    font-size: 1.7rem;
+}
+
+.block__size {
+    margin-bottom: 1.5rem;
+}
+
+.block__size input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    display: none;
+}
+
+.block__size input:checked + label {
+    background-color: #14aba0;
+    color: #ffffff;
+}
+
+.block__size label {
+    padding: 0.5rem 1.5rem;
+    font-family: "Raleway", sans-serif;
+    color: #000000;
+    font-weight: 500;
+    font-size: 1.7rem;
+    background-color: #d9d9d9;
+    display: inline-block;
+}
+
+.block__size label:hover {
+    cursor: pointer;
+}
+
+.block__btn {
+    margin-bottom: 1.5rem;
+}
+
+.block__btn button {
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    color: #ffffff;
+    font-size: 1.8rem;
+    background-color: #14aba0;
+    padding: 1rem 2rem;
+    transition: background-color 0.1s linear;
+}
+
+.block__btn button:hover {
+    background-color: #2e9891;
+}
+
+.block__btn button:active {
+    transform: scale(0.98);
+}
+
+.block__opys {
+    border-top: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+    padding: 1rem 0;
+}
+
+.block__opys--option h3 {
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    color: #000000;
+    font-size: 1.7rem;
+    margin-bottom: 1rem;
+}
+
+.block__opys--option div {
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+.block__opys--option div:last-child {
+    margin-bottom: 0;
+}
+
+.block__opys--option div p {
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    color: #000000;
+    font-size: 1.3rem;
+}
+
+.block__opys--option div p:first-child {
+    font-weight: 300;
+    width: 25%;
+}
+
 /*modal*/
 .modal {
     position: fixed;
