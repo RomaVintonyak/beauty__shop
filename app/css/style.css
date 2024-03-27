@@ -1005,8 +1005,7 @@ a:focus {
 }
 
 .block__text {
-    width: 80%;
-    margin: 0 auto 2rem auto;
+    margin-bottom: 2rem;
 }
 
 .block__text--title {
@@ -1021,14 +1020,6 @@ a:focus {
     color: #000000;
 }
 
-.block__text--title h4 {
-    font-family: "Raleway", sans-serif;
-    font-size: 2rem;
-    font-weight: 500;
-    color: #14aba0;
-    text-transform: uppercase;
-}
-
 .block__text--text p {
     margin-bottom: 1rem;
     font-family: "Raleway", sans-serif;
@@ -1041,13 +1032,13 @@ a:focus {
     margin-bottom: 0;
 }
 
-.block__text:last-child {
-    margin: 0 auto 0 auto;
-}
-
 .block__text:nth-child(2) {
     border-bottom: 1px solid #000;
     padding-bottom: 1rem;
+}
+
+.block__text:last-child {
+    margin-bottom: 0;
 }
 
 /*footer*/
@@ -2402,6 +2393,7 @@ a:focus {
 
 .reviews__block--admin {
     padding-left: 3rem;
+    margin-bottom: 2rem;
 }
 
 .reviews__block--admin .reviews__header .reviews__header--icon i {
@@ -2532,6 +2524,135 @@ a:focus {
 
 .reviews__form form button:active {
     transform: scale(0.98);
+}
+
+/*basket page*/
+.basket {
+    padding: 4rem 0;
+}
+
+.basket__row--title {
+    margin-bottom: 2rem;
+}
+
+.basket__row--title h3 {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 2.7rem;
+    color: #000000;
+}
+
+.tovar__block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.tovar__block--delete {
+    width: 2%;
+}
+
+.tovar__block--delete button {
+    background-color: transparent;
+    border: none;
+}
+
+.tovar__block--delete button i {
+    font-size: 2rem;
+    color: #d9d9d9;
+    transition: color 0.2s linear;
+}
+
+.tovar__block--delete button:hover i {
+    color: #000000;
+}
+
+.tovar__block--content {
+    width: 96%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #d9d9d9;
+    padding: 1rem;
+}
+
+.tovar__block:last-child {
+    margin-bottom: 0;
+}
+
+.tovar__img {
+    width: 15%;
+}
+
+.tovar__opys {
+    width: 50%;
+}
+
+.tovar__opys h3 {
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    color: #000000;
+    font-size: 1.7rem;
+    margin-bottom: 1rem;
+}
+
+.tovar__opys span {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    color: #000000;
+    font-size: 1.7rem;
+}
+
+.tovar__count {
+    width: 15%;
+    height: 5rem;
+    border: 1px solid #d9d9d9;
+    display: flex;
+}
+
+.tovar__count button {
+    width: 25%;
+    border: none;
+    background-color: transparent;
+}
+
+.tovar__count button i {
+    color: #000000;
+    font-size: 1.7rem;
+    transition: color 0.2s linear;
+}
+
+.tovar__count button:hover i {
+    color: #14aba0;
+}
+
+.tovar__count button:active {
+    background-color: #d9d9d9;
+}
+
+.tovar__count input {
+    display: block;
+    width: 50%;
+    text-align: center;
+    border-left: 1px solid #d9d9d9;
+    border-right: 1px solid #d9d9d9;
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 1.7rem;
+    color: #000000;
+}
+
+.tovar__summ {
+    width: 10%;
+    text-align: center;
+}
+
+.tovar__summ span {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    color: #000000;
+    font-size: 1.7rem;
 }
 
 /*modal*/
