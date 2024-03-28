@@ -2542,6 +2542,11 @@ a:focus {
     color: #000000;
 }
 
+.basket__row--footer {
+    text-align: right;
+    margin-top: 2rem;
+}
+
 .tovar__block {
     display: flex;
     align-items: center;
@@ -2653,6 +2658,35 @@ a:focus {
     font-weight: 700;
     color: #000000;
     font-size: 1.7rem;
+}
+
+.basket__footer--summ {
+    margin-bottom: 1rem;
+}
+
+.basket__footer--summ span {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    color: #000000;
+    font-size: 1.8rem;
+}
+
+.basket__footer--button button {
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    color: #ffffff;
+    font-size: 1.8rem;
+    background-color: #14aba0;
+    padding: 1rem 2rem;
+    transition: background-color 0.1s linear;
+}
+
+.basket__footer--button button:hover {
+    background-color: #2e9891;
+}
+
+.basket__footer--button button:active {
+    transform: scale(0.98);
 }
 
 /*modal*/
