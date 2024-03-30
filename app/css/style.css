@@ -3150,6 +3150,148 @@ a:focus {
     width: 100%;
 }
 
+.basket__modal--close {
+    text-align: right;
+    margin-bottom: 1rem;
+}
+
+.basket__modal--close button {
+    border: none;
+    background-color: transparent;
+}
+
+.basket__modal--close button i {
+    font-size: 2.6rem;
+    color: #d9d9d9;
+    transition: color 0.2s linear;
+}
+
+.basket__modal--close button:focus {
+    outline: none;
+}
+
+.basket__modal--close button:hover {
+    cursor: pointer;
+}
+
+.basket__modal--close button:hover i {
+    color: #000000;
+}
+
+.basket__modal--title {
+    margin-bottom: 1rem;
+}
+
+.basket__modal--title h3 {
+    font-family: "Raleway", sans-serif;
+    color: #000000;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.basket__modal--form {
+    width: 100%;
+}
+
+.basket__form--block {
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.basket__form--block label {
+    font-family: "Raleway", sans-serif;
+    color: #000000;
+    font-weight: 500;
+    font-size: 1.7rem;
+    margin-bottom: 0.2rem;
+}
+
+.basket__form--block input {
+    border: 1px solid #d9d9d9;
+    width: 100%;
+    height: 4rem;
+    padding: 0.7rem;
+    margin-bottom: 0.2rem;
+    font-family: "Raleway", sans-serif;
+    color: #000000;
+    font-size: 1.7rem;
+    font-weight: 500;
+}
+
+.basket__form--block input:focus {
+    border: 1px solid #14aba0;
+}
+
+.basket__form--block p {
+    font-weight: 500;
+    font-family: "Raleway", sans-serif;
+    font-size: 1.3rem;
+    color: #14aba0;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.basket__form--block select {
+    border: 1px solid #d9d9d9;
+    width: 100%;
+    height: 4rem;
+    padding: 0.7rem;
+    margin-bottom: 0.2rem;
+    font-family: "Raleway", sans-serif;
+    color: #000000;
+    font-size: 1.7rem;
+    font-weight: 500;
+}
+
+.basket__form--block select:focus {
+    border: 1px solid #14aba0;
+}
+
+.basket__form--button {
+    margin-bottom: 0.5rem;
+}
+
+.basket__form--button button {
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    color: #ffffff;
+    font-size: 1.8rem;
+    background-color: #14aba0;
+    padding: 1rem 2rem;
+    transition: background-color 0.1s linear;
+}
+
+.basket__form--button button:hover {
+    background-color: #2e9891;
+}
+
+.basket__form--button button:active {
+    transform: scale(0.98);
+}
+
+.kupivlya__oferta p {
+    font-family: "Raleway", sans-serif;
+    font-weight: 300;
+    color: #000000;
+    font-size: 1.3rem;
+}
+
+.kupivlya__oferta a {
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    color: #000000;
+    font-size: 1.3rem;
+    text-decoration: none;
+    transition: color 0.2s linear;
+}
+
+.kupivlya__oferta a:hover {
+    color: #2e9891;
+    cursor: pointer;
+}
+
 /*==============vendor=============*/
 /*slick slider*/
 .slick-slider {
