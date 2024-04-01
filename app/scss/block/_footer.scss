@@ -5,11 +5,19 @@
    padding-top: 2rem;
    padding-bottom: 2rem;
    background-color: $background;
+   @include tablet{
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+   }
 }
 .footer__row {
    display: flex;
    align-items: flex-start;
    justify-content: space-between;
+   @include tablet{
+      flex-wrap: wrap;
+      justify-content: center;
+   }
 }
 .footer__brand {
    width: 20%;
@@ -30,6 +38,13 @@
       font-size: 1.6rem;
       color: $white;
       font-family: $font;
+   }
+   @include tablet{
+      order: 3;
+      width: 35%;
+   }
+   @include mobile{
+      width: 100%;
    }
 }
 .footer__catalog {
@@ -65,6 +80,14 @@
          }
       }
    }
+   @include tablet{
+      order: 0;
+      width: 35%;
+      margin-bottom: 2rem;
+   }
+   @include mobile{
+      display: none;
+   }
 }
 .footer__menu {
    width: 20%;
@@ -99,6 +122,13 @@
          }
       }
    }
+   @include tablet{
+      order: 1;
+      width: 35%;
+   }
+   @include mobile{
+      display: none;
+   }
 }
 .footer__contact {
    width: 20%;
@@ -110,6 +140,17 @@
          font-weight: 500;
          font-size: 2rem;
       }
+   }
+   @include notebook{
+      width: 30%;
+   }
+   @include tablet{
+      order: 2;
+      width: 35%;
+   }
+   @include mobile{
+      width: 100%;
+      margin-bottom: 2rem;
    }
 }
 .adres__phone {

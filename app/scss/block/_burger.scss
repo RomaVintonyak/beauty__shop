@@ -45,4 +45,7 @@
          }
       }
    }
+   @include tablet{
+      display: block;
+   }
 }

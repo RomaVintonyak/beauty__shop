@@ -24,12 +24,24 @@
          font-size: 4.5rem;
          color: rgba($silver-b, 0.4);
          transition: color 0.2s linear;
+         @include tablet{
+            font-size: 2.5rem;
+         }
+         @include mobile{
+            font-size: 2rem;
+         }
       }
       &:hover {
          background-color: rgba($white, 0.6);
          i {
             color: rgba($silver-b, 0.8);
          }
+      }
+      @include tablet{
+         width: 5%;
+      }
+      @include mobile{
+         width: 10%;
       }
    }
    &--next {
@@ -48,12 +60,24 @@
          font-size: 4.5rem;
          color: rgba($silver-b, 0.4);
          transition: color 0.2s linear;
+         @include tablet{
+            font-size: 2.5rem;
+         }
+         @include mobile{
+            font-size: 2rem;
+         }
       }
       &:hover {
          background-color: rgba($white, 0.6);
          i {
             color: rgba($silver-b, 0.8);
          }
+      }
+      @include tablet{
+         width: 5%;
+      }
+      @include mobile{
+         width: 10%;
       }
    }
    &--dots {

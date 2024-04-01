@@ -11,10 +11,25 @@
          font-weight: 500;
          font-size: 2.5rem;
          color: $main;
+         @include tablet{
+            font-size: 2rem;
+         }
+      }
+      @include tablet{
+         margin-bottom: 2rem;
+      }
+      @include mobile{
+         margin-bottom: 1rem;
       }
    }
    &--row {
       width: 100%;
+   }
+   @include tablet{
+      margin-top: 2rem;
+   }
+   @include mobile{
+      margin-top: 1rem;
    }
 }
 .product__slider {

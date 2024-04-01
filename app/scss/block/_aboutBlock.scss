@@ -6,6 +6,12 @@
    &--row {
       display: flex;
       justify-content: space-between;
+      @include tablet{
+         flex-wrap: wrap;
+      }
+      @include mobile-sm{
+         justify-content: center;
+      }
    }
 }
 .about__content {
@@ -32,5 +38,24 @@
          font-weight: 300;
          font-size: 1.4rem;
       }
+   }
+   @include tablet{
+      width: 40%;
+      margin-bottom: 2rem;
+      &:last-child{
+         margin-bottom: 0;
+      }
+   }
+   @include mobile{
+      width: 50%;
+   }
+   @include mobile-sm{
+      width: 70%;
+   }
+   @include mobile-xsm{
+      width: 90%;
+   }
+   @include mobile-xxsm{
+      width: 100%;
    }
 }
