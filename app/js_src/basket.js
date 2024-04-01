@@ -1,5 +1,28 @@
 jQuery(document).ready(function () {
    "use script";
+   /*basket modal window*/
+   var showBasketModal = $("._basketBye");
+   var BasketmodalWindow = $(".basket__modal");
+   var BasketmodalMask = $(".basket__modal--mask");
+   var BasketmodalBody = $(".basket__modal--body");
+   var BaasketmodalClose = $("#basketModalClose");
+   showBasketModal.on("click", function (event) {
+      event.preventDefault();
+      BasketmodalWindow.addClass("basket__modal--open");
+      $("body").css({ "overflow": "hidden" });
+   });
+   BaasketmodalClose.on("click", function (event) {
+      event.preventDefault();
+      BasketmodalWindow.removeClass("basket__modal--open");
+      $("body").removeAttr("style");
+   })
+   BasketmodalMask.on("click", function () {
+      BasketmodalWindow.removeClass("basket__modal--open");
+      $("body").removeAttr("style");
+   });
+   BasketmodalBody.on("click", function (event) {
+      event.stopPropagation();
+   });
    /*tovar count item*/
    $("._tovarPrice").each(function () {
       var tovarPrice = $(this).text();
@@ -70,5 +93,79 @@ jQuery(document).ready(function () {
       tovarSummPblock.html(tovarSummP);
       allSumm();
       return false;
+   });
+   /*form validation basket*/
+   var sendBasket = $("#sendBasket");
+   var basket_ajax_url = $("#basketForm").attr('data-action');
+   sendBasket.on("click", function () {
+      var basketPIB = $("#basketPIB").val().trim();
+      var basketPhone = $("#basketPhone").val().trim(),
+         basketPhoneintRegex = /^(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){10,14}(\s*)?$/;
+      var basketMail = $("#basketMail").val().trim(),
+         basketMailReg = /^[a-z0-9_-]+@[a-z0-9-]+\.([a-z]{1,6}\.)?[a-z]{2,6}$/i;
+      var basketAdress = $("#basketAdress").val().trim();
+      var basketDostavka = $("#basketDostavka :selected").val().trim();
+      var basketOplata = $("#basketOplata :selected").val().trim();
+      if (basketPIB.length < 6) {
+         $(".error__pib--basket").css({
+            "opacity": "1",
+            "visibility": "visible"
+         });
+         return false;
+      } else if ((basketPhone.length < 6) || (!basketPhoneintRegex.test(basketPhone))) {
+         $(".error__pib--basket").removeAttr("style");
+         $(".error__phone--basket").css({
+            "opacity": "1",
+            "visibility": "visible"
+         });
+         return false;
+      } else if (!basketMailReg.test(basketMail) || basketMail == '') {
+         $(".error__pib--basket").removeAttr("style");
+         $(".error__phone--basket").removeAttr("style");
+         $(".error__mail--basket").css({
+            "opacity": "1",
+            "visibility": "visible"
+         });
+         return false;
+      } else if (basketAdress.length < 6) {
+         $(".error__pib--basket").removeAttr("style");
+         $(".error__phone--basket").removeAttr("style");
+         $(".error__mail--basket").removeAttr("style");
+         $(".error__adress--basket").css({
+            "opacity": "1",
+            "visibility": "visible"
+         });
+         return false;
+      }
+      $(".error__pib--basket").removeAttr("style");
+      $(".error__phone--basket").removeAttr("style");
+      $(".error__mail--basket").removeAttr("style");
+      $(".error__adress--basket").removeAttr("style");
+      $.ajax({
+         url: basket_ajax_url,
+         type: 'POST',
+         cache: false,
+         data: {
+            action: 'sendBasketForm',
+            'basketPIB': basketPIB,
+            'basketPhone': basketPhone,
+            'basketMail': basketMail,
+            'basketAdress': basketAdress,
+            'basketDostavka': basketDostavka,
+            'basketOplata': basketOplata
+         },
+         dataType: 'html',
+         beforeSend: function () {
+            sendBasket.prop("disabled", true);
+         },
+         success: function (data) {
+            if (!data)
+               alert("Щось не так ... Спробуйте ще раз!");
+            else
+               $("#basketForm").trigger("reset");
+            alert(data);
+            sendBasket.prop("disabled", false);
+         }
+      });
    });
 });
