@@ -29,7 +29,7 @@
 }
 .modal__content {
    position: relative;
-   width: 38%;
+   width: 42%;
    background-color: $white;
    padding: 2rem;
    &--close {
@@ -59,9 +59,24 @@
    &--body {
       border: 1px solid $silver-b;
       padding: 3rem;
+      @include tablet {
+         padding: 2rem;
+      }
+      @include mobile {
+         padding: 1rem;
+      }
+      @include mobile-xxsm {
+         padding: 0.5rem;
+      }
    }
    &--active {
       display: none;
+   }
+   @include tablet {
+      width: 85%;
+   }
+   @include mobile {
+      width: 98%;
    }
 }
 .switch__tabs {
@@ -80,6 +95,14 @@
       &:hover {
          cursor: default;
       }
+   }
+   @include tablet {
+      padding: 0 2rem;
+   }
+   @include mobile {
+      padding: 0 1.5rem;
+      font-size: 1.5rem;
+      font-weight: 500;
    }
 }
 .modal__login {
@@ -100,6 +123,9 @@
          font-weight: 300;
          font-size: 1.7rem;
          margin-bottom: 0.5rem;
+         @include mobile {
+            font-size: 1.5rem;
+         }
       }
       input {
          border: 1px solid $silver-b;
@@ -155,6 +181,16 @@
             &:hover {
                color: $background;
             }
+            @include notebook {
+               margin-left: 0.5rem;
+            }
+            @include tablet {
+               margin-left: 0;
+            }
+         }
+         @include mobile {
+            font-size: 1.5rem;
+            padding: 0.5rem 0.3rem;
          }
       }
    }
@@ -177,6 +213,9 @@
          font-weight: 300;
          font-size: 1.7rem;
          margin-bottom: 0.5rem;
+         @include mobile {
+            font-size: 1.5rem;
+         }
       }
       input {
          border: 1px solid $silver-b;
@@ -225,6 +264,10 @@
          &:active {
             transform: scale(0.97);
          }
+         @include mobile {
+            font-size: 1.5rem;
+            padding: 0.5rem 0.3rem;
+         }
       }
    }
 }
@@ -251,11 +294,17 @@
 }
 .modal__recover {
    display: none;
-   width: 38%;
+   width: 42%;
    background-color: $white;
    padding: 2rem;
    &--active {
       display: block;
+   }
+   @include tablet {
+      width: 85%;
+   }
+   @include mobile {
+      width: 98%;
    }
 }
 .recover__close {
@@ -287,6 +336,12 @@
       color: $black;
       font-weight: 500;
       font-size: 2.7rem;
+      @include tablet {
+         font-size: 2rem;
+      }
+      @include mobile {
+         font-size: 1.8rem;
+      }
    }
 }
 .recover__text {
@@ -297,6 +352,9 @@
       color: $black;
       font-size: 1.7rem;
       font-weight: 300;
+      @include mobile {
+         font-size: 1.5rem;
+      }
    }
 }
 .revover__form {
@@ -311,6 +369,9 @@
          font-weight: 300;
          font-size: 1.7rem;
          margin-bottom: 0.5rem;
+         @include mobile {
+            font-size: 1.5rem;
+         }
       }
       input {
          border: 1px solid $silver-b;
@@ -358,6 +419,10 @@
          }
          &:active {
             transform: scale(0.97);
+         }
+         @include mobile {
+            font-size: 1.5rem;
+            padding: 0.5rem 0.3rem;
          }
       }
    }
