@@ -13,12 +13,24 @@
             font-size: 2.5rem;
             font-weight: 700;
             margin-bottom: 0.2rem;
+            @include tablet {
+               font-size: 2rem;
+            }
+            @include mobile {
+               font-size: 1.8rem;
+            }
          }
          h3 {
             font-family: $font;
             color: $black;
             font-size: 1.7rem;
             font-weight: 500;
+            @include mobile {
+               font-size: 1.5rem;
+            }
+         }
+         @include mobile {
+            margin-bottom: 1rem;
          }
       }
       &--text {
@@ -37,6 +49,12 @@
                   color: $black;
                }
             }
+            @include mobile {
+               font-size: 1.5rem;
+            }
+         }
+         @include mobile {
+            margin-bottom: 1rem;
          }
       }
       &--list {
@@ -61,8 +79,14 @@
                &:last-child {
                   margin-bottom: 0;
                }
+               @include mobile {
+                  font-size: 1.5rem;
+               }
             }
          }
       }
+   }
+   @include tablet {
+      padding: 2rem 0;
    }
 }

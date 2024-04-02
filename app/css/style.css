@@ -636,12 +636,9 @@ a:focus {
     color: #2e9891;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
     .navbar__content--phone {
-        margin-right: 0;
-        width: 100%;
-        margin-bottom: 1rem;
-        text-align: center;
+        display: none;
     }
 }
 
@@ -669,12 +666,16 @@ a:focus {
     font-size: 1.7rem;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
     .navbar__content--time {
         margin-right: 0;
-        width: 100%;
-        margin-bottom: 1rem;
-        text-align: center;
+        padding-left: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar__content--time {
+        padding-left: 0;
     }
 }
 
@@ -705,24 +706,23 @@ a:focus {
     color: #000000;
 }
 
+@media (max-width: 768px) {
+    .navbar__content--basket {
+        padding-right: 1rem;
+    }
+}
+
 @media (max-width: 576px) {
     .navbar__content--basket {
-        width: 100%;
-        text-align: center;
+        padding-right: 0;
     }
 }
 
 @media (max-width: 768px) {
     .navbar__content {
-        width: 80%;
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-}
-
-@media (max-width: 576px) {
-    .navbar__content {
         width: 100%;
+        justify-content: space-between;
+        margin-bottom: 1rem;
     }
 }
 
@@ -750,28 +750,27 @@ a:focus {
 
 @media (max-width: 991px) {
     .product__menu--item {
-        width: 20%;
-        height: 3rem;
+        width: 10%;
+        height: 2rem;
     }
 }
 
 @media (max-width: 768px) {
     .product__menu--item {
-        width: 25%;
-        height: 2rem;
+        width: 15%;
     }
 }
 
 @media (max-width: 576px) {
     .product__menu--item {
-        width: 30%;
+        width: 20%;
         height: 1.5rem;
     }
 }
 
 @media (max-width: 450px) {
     .product__menu--item {
-        width: 35%;
+        width: 30%;
     }
 }
 
@@ -791,6 +790,13 @@ a:focus {
 @media (max-width: 1366px) {
     .product__menu--link {
         font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 991px) {
+    .product__menu--link {
+        font-weight: 300;
+        font-size: 1.2rem;
     }
 }
 
@@ -1825,11 +1831,30 @@ a:focus {
     padding-bottom: 4rem;
 }
 
+@media (max-width: 991px) {
+    .about__me {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+}
+
 .me__title h3 {
     font-weight: 700;
     font-size: 2.5rem;
     color: #000000;
     font-family: "Raleway", sans-serif;
+}
+
+@media (max-width: 991px) {
+    .me__title h3 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .me__title h3 {
+        font-size: 1.8rem;
+    }
 }
 
 .me__text {
@@ -1845,6 +1870,12 @@ a:focus {
 
 .me__text p span {
     font-weight: 700;
+}
+
+@media (max-width: 768px) {
+    .me__text p {
+        font-size: 1.5rem;
+    }
 }
 
 .me__list {
@@ -1866,6 +1897,18 @@ a:focus {
     margin-bottom: 0;
 }
 
+@media (max-width: 991px) {
+    .me__list p {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .me__list p {
+        font-size: 1.8rem;
+    }
+}
+
 .me__list li {
     margin-bottom: 2rem;
 }
@@ -1883,10 +1926,34 @@ a:focus {
     font-weight: 700;
 }
 
+@media (max-width: 768px) {
+    .me__list li p {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 991px) {
+    .me__list li {
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-width: 991px) {
+    .me__list {
+        margin-top: 2rem;
+    }
+}
+
 /*dostavka page*/
 .dostavka {
     background-color: #f7f7f7;
     padding: 4rem 0;
+}
+
+@media (max-width: 991px) {
+    .dostavka {
+        padding: 2rem 0;
+    }
 }
 
 .dostavka__title {
@@ -1900,6 +1967,18 @@ a:focus {
     font-weight: 700;
 }
 
+@media (max-width: 991px) {
+    .dostavka__title h3 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .dostavka__title h3 {
+        font-size: 1.8rem;
+    }
+}
+
 .dostavka__suptitle {
     margin-bottom: 1rem;
 }
@@ -1909,6 +1988,12 @@ a:focus {
     color: #000000;
     font-weight: 700;
     font-size: 1.7rem;
+}
+
+@media (max-width: 768px) {
+    .dostavka__suptitle h3 {
+        font-size: 1.5rem;
+    }
 }
 
 .dostavka__block {
@@ -1933,6 +2018,12 @@ a:focus {
     font-size: 1.7rem;
 }
 
+@media (max-width: 768px) {
+    .dostavka__block--title span {
+        font-size: 1.5rem;
+    }
+}
+
 .dostavka__block--text p {
     color: #000000;
     font-weight: 300;
@@ -1949,6 +2040,12 @@ a:focus {
     margin-bottom: 0;
 }
 
+@media (max-width: 768px) {
+    .dostavka__block--text p {
+        font-size: 1.5rem;
+    }
+}
+
 .oplata__block {
     border-top: 1px solid #000000;
     padding-top: 1rem;
@@ -1963,6 +2060,12 @@ a:focus {
     color: #000000;
     font-weight: 700;
     font-size: 1.7rem;
+}
+
+@media (max-width: 768px) {
+    .oplata__block--title h3 {
+        font-size: 1.5rem;
+    }
 }
 
 .oplata__block--text p {
@@ -1991,6 +2094,12 @@ a:focus {
     font-weight: 700;
 }
 
+@media (max-width: 768px) {
+    .oplata__block--text p {
+        font-size: 1.5rem;
+    }
+}
+
 /*obmin page*/
 .obmin {
     background-color: #f7f7f7;
@@ -2006,6 +2115,24 @@ a:focus {
     color: #000000;
     font-size: 2.5rem;
     font-weight: 700;
+}
+
+@media (max-width: 991px) {
+    .obmin__row--title h3 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .obmin__row--title h3 {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .obmin__row--title {
+        margin-bottom: 1rem;
+    }
 }
 
 .obmin__row--block {
@@ -2029,6 +2156,12 @@ a:focus {
 
 .obmin__row--block h3 a:hover {
     color: #000000;
+}
+
+@media (max-width: 768px) {
+    .obmin__row--block h3 {
+        font-size: 1.5rem;
+    }
 }
 
 .obmin__row--block P {
@@ -2060,6 +2193,30 @@ a:focus {
     cursor: pointer;
 }
 
+@media (max-width: 991px) {
+    .obmin__row--block P {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .obmin__row--block P {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .obmin__row--block {
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-width: 991px) {
+    .obmin {
+        padding: 2rem 0;
+    }
+}
+
 /*contact page*/
 .contact__title {
     margin-bottom: 6rem;
@@ -2073,7 +2230,7 @@ a:focus {
 
 @media (max-width: 768px) {
     .contact__title {
-        margin-bottom: 2rem;
+        margin-bottom: 3rem;
     }
 }
 
@@ -2089,6 +2246,19 @@ a:focus {
     font-weight: 700;
     border-bottom: 1px solid #14aba0;
     display: inline;
+}
+
+@media (max-width: 991px) {
+    .contact__title h1 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact__title h1 {
+        font-size: 1.8rem;
+        font-weight: 500;
+    }
 }
 
 .contact__block {
@@ -2113,6 +2283,13 @@ a:focus {
     align-items: flex-start;
 }
 
+@media (max-width: 991px) {
+    .contact__block--row {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
 .contact__address {
     width: 46%;
 }
@@ -2133,11 +2310,42 @@ a:focus {
     margin-right: 1rem;
 }
 
+@media (max-width: 768px) {
+    .contact__address--line i {
+        font-size: 2rem;
+    }
+}
+
 .contact__address--line span {
     color: #000000;
     font-weight: 500;
     font-family: "Raleway", sans-serif;
     font-size: 1.7rem;
+}
+
+@media (max-width: 768px) {
+    .contact__address--line span {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact__address--line {
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-width: 991px) {
+    .contact__address {
+        width: 80%;
+        margin-top: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact__address {
+        width: 100%;
+    }
 }
 
 .contact__form {
@@ -2156,6 +2364,12 @@ a:focus {
     left: 0;
     font-size: 2.5rem;
     color: #14aba0;
+}
+
+@media (max-width: 768px) {
+    .contact__form--block i {
+        font-size: 2rem;
+    }
 }
 
 .contact__form--block input {
@@ -2180,7 +2394,7 @@ a:focus {
 
 @media (max-width: 768px) {
     .contact__form--block input {
-        font-size: 1.6rem;
+        font-size: 1.5rem;
     }
 }
 
@@ -2193,6 +2407,12 @@ a:focus {
     color: #000000;
     font-family: "Raleway", sans-serif;
     transition: font-size 0.1s linear, top 0.1s linear;
+}
+
+@media (max-width: 768px) {
+    .contact__form--block label {
+        font-size: 1.5rem;
+    }
 }
 
 .contact__form--block textarea {
@@ -2218,7 +2438,7 @@ a:focus {
 
 @media (max-width: 768px) {
     .contact__form--block textarea {
-        font-size: 1.6rem;
+        font-size: 1.5rem;
     }
 }
 
@@ -2267,9 +2487,28 @@ a:focus {
     transform: scale(0.97);
 }
 
+@media (max-width: 768px) {
+    .contact__form--button button {
+        font-size: 1.5rem;
+        padding: 1rem;
+    }
+}
+
 @media (max-width: 991px) {
     .contact__form--button {
         margin-bottom: 1rem;
+    }
+}
+
+@media (max-width: 991px) {
+    .contact__form {
+        width: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact__form {
+        width: 100%;
     }
 }
 
@@ -2280,6 +2519,12 @@ a:focus {
     font-weight: 500;
     font-size: 1.7rem;
     color: #2e9891;
+}
+
+@media (max-width: 768px) {
+    .error__text {
+        font-size: 1.5rem;
+    }
 }
 
 #name:focus ~ label[for="name"] {
@@ -2347,6 +2592,24 @@ a:focus {
     font-size: 2.5rem;
 }
 
+@media (max-width: 991px) {
+    .promotion__row--title h2 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .promotion__row--title h2 {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .promotion__row--title {
+        margin-bottom: 1rem;
+    }
+}
+
 .promotion__row--content p {
     margin-bottom: 1rem;
     font-family: "Raleway", sans-serif;
@@ -2361,6 +2624,18 @@ a:focus {
 
 .promotion__row--content p span {
     font-weight: 500;
+}
+
+@media (max-width: 768px) {
+    .promotion__row--content p {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 991px) {
+    .promotion {
+        padding: 2rem 0;
+    }
 }
 
 /*dogovir page*/
@@ -2381,11 +2656,35 @@ a:focus {
     margin-bottom: 0.2rem;
 }
 
+@media (max-width: 991px) {
+    .oferta__row--title h2 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .oferta__row--title h2 {
+        font-size: 1.8rem;
+    }
+}
+
 .oferta__row--title h3 {
     font-family: "Raleway", sans-serif;
     color: #000000;
     font-size: 1.7rem;
     font-weight: 500;
+}
+
+@media (max-width: 768px) {
+    .oferta__row--title h3 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .oferta__row--title {
+        margin-bottom: 1rem;
+    }
 }
 
 .oferta__row--text {
@@ -2408,6 +2707,18 @@ a:focus {
 
 .oferta__row--text p a:hover {
     color: #000000;
+}
+
+@media (max-width: 768px) {
+    .oferta__row--text p {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .oferta__row--text {
+        margin-bottom: 1rem;
+    }
 }
 
 .oferta__row--list {
@@ -2439,6 +2750,18 @@ a:focus {
 
 .oferta__row--list li p:last-child {
     margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+    .oferta__row--list li p {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 991px) {
+    .oferta {
+        padding: 2rem 0;
+    }
 }
 
 /*catalog page*/

@@ -5,6 +5,10 @@
    background-color: $silver;
    padding-top: 4rem;
    padding-bottom: 4rem;
+   @include tablet{
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+   }
 }
 .me__title {
    h3 {
@@ -12,6 +16,12 @@
       font-size: 2.5rem;
       color: $black;
       font-family: $font;
+      @include tablet{
+         font-size: 2rem;
+      }
+      @include mobile{
+         font-size: 1.8rem;
+      }
    }
 }
 .me__text {
@@ -23,6 +33,9 @@
       font-weight: 500;
       span{
          font-weight: 700;
+      }
+      @include mobile{
+         font-size: 1.5rem;
       }
    }
 }
@@ -40,6 +53,12 @@
       &:last-child {
          margin-bottom: 0;
       }
+      @include tablet{
+         font-size: 2rem;
+      }
+      @include mobile{
+         font-size: 1.8rem;
+      }
    }
    li {
       margin-bottom: 2rem;
@@ -52,6 +71,15 @@
          span {
             font-weight: 700;
          }
+         @include mobile{
+            font-size: 1.5rem;
+         }
       }
+      @include tablet{
+         margin-bottom: 1rem;
+      }
+   }
+   @include tablet{
+      margin-top: 2rem;
    }
 }

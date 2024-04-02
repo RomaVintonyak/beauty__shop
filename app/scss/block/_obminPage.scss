@@ -12,6 +12,15 @@
             color: $black;
             font-size: 2.5rem;
             font-weight: 700;
+            @include tablet {
+               font-size: 2rem;
+            }
+            @include mobile {
+               font-size: 1.8rem;
+            }
+         }
+         @include mobile {
+            margin-bottom: 1rem;
          }
       }
       &--block {
@@ -22,14 +31,17 @@
             font-size: 1.7rem;
             font-weight: 700;
             margin-bottom: 1rem;
-            a{
+            a {
                color: $background;
                margin-left: 0.5rem;
                text-decoration: underline;
                transition: color 0.2s linear;
-               &:hover{
+               &:hover {
                   color: $black;
                }
+            }
+            @include mobile {
+               font-size: 1.5rem;
             }
          }
          P {
@@ -55,7 +67,19 @@
                   cursor: pointer;
                }
             }
+            @include tablet {
+               font-size: 2rem;
+            }
+            @include mobile {
+               font-size: 1.5rem;
+            }
+         }
+         @include mobile {
+            margin-bottom: 1rem;
          }
       }
+   }
+   @include tablet {
+      padding: 2rem 0;
    }
 }

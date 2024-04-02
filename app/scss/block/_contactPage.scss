@@ -7,7 +7,7 @@
       margin-bottom: 4rem;
    }
    @include mobile {
-      margin-bottom: 2rem;
+      margin-bottom: 3rem;
    }
    &--title {
       text-align: center;
@@ -20,6 +20,13 @@
       font-weight: 700;
       border-bottom: 1px solid $main;
       display: inline;
+      @include tablet {
+         font-size: 2rem;
+      }
+      @include mobile {
+         font-size: 1.8rem;
+         font-weight: 500;
+      }
    }
 }
 .contact__block {
@@ -34,6 +41,10 @@
       display: flex;
       justify-content: space-between;
       align-items: flex-start;
+      @include tablet {
+         flex-wrap: wrap;
+         justify-content: center;
+      }
    }
 }
 .contact__address {
@@ -49,13 +60,29 @@
          color: $main;
          font-size: 2.5rem;
          margin-right: 1rem;
+         @include mobile {
+            font-size: 2rem;
+         }
       }
       span {
          color: $black;
          font-weight: 500;
          font-family: $font;
          font-size: 1.7rem;
+         @include mobile {
+            font-size: 1.5rem;
+         }
       }
+      @include mobile {
+         margin-bottom: 1rem;
+      }
+   }
+   @include tablet {
+      width: 80%;
+      margin-top: 1rem;
+   }
+   @include mobile {
+      width: 100%;
    }
 }
 .contact__form {
@@ -70,6 +97,9 @@
          left: 0;
          font-size: 2.5rem;
          color: $main;
+         @include mobile {
+            font-size: 2rem;
+         }
       }
       input {
          font-weight: 500;
@@ -89,7 +119,7 @@
             border-bottom-color: $background;
          }
          @include mobile {
-            font-size: 1.6rem;
+            font-size: 1.5rem;
          }
       }
       label {
@@ -101,6 +131,9 @@
          color: $black;
          font-family: $font;
          transition: font-size 0.1s linear, top 0.1s linear;
+         @include mobile {
+            font-size: 1.5rem;
+         }
       }
       textarea {
          font-weight: 500;
@@ -121,7 +154,7 @@
             border-bottom-color: $background;
          }
          @include mobile {
-            font-size: 1.6rem;
+            font-size: 1.5rem;
          }
       }
       @include mobile {
@@ -159,10 +192,20 @@
          &:active {
             transform: scale(0.97);
          }
+         @include mobile {
+            font-size: 1.5rem;
+            padding: 1rem;
+         }
       }
       @include tablet {
          margin-bottom: 1rem;
       }
+   }
+   @include tablet {
+      width: 80%;
+   }
+   @include mobile {
+      width: 100%;
    }
 }
 .error__text {
@@ -172,6 +215,9 @@
    font-weight: 500;
    font-size: 1.7rem;
    color: $background;
+   @include mobile {
+      font-size: 1.5rem;
+   }
 }
 #name:focus ~ label[for="name"] {
    font-size: 1.2rem;

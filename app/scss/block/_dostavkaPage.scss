@@ -4,6 +4,9 @@
 .dostavka {
    background-color: $silver;
    padding: 4rem 0;
+   @include tablet{
+      padding: 2rem 0;
+   }
 }
 .dostavka__title {
    margin-bottom: 1rem;
@@ -12,6 +15,12 @@
       color: $black;
       font-size: 2.5rem;
       font-weight: 700;
+      @include tablet{
+         font-size: 2rem;
+      }
+      @include mobile{
+         font-size: 1.8rem;
+      }
    }
 }
 .dostavka__suptitle {
@@ -21,6 +30,9 @@
       color: $black;
       font-weight: 700;
       font-size: 1.7rem;
+      @include mobile{
+         font-size: 1.5rem;
+      }
    }
 }
 .dostavka__block {
@@ -38,6 +50,9 @@
          color: $black;
          font-weight: 700;
          font-size: 1.7rem;
+         @include mobile{
+            font-size: 1.5rem;
+         }
       }
    }
    &--text {
@@ -53,6 +68,9 @@
          &:last-child {
             margin-bottom: 0;
          }
+         @include mobile{
+            font-size: 1.5rem;
+         }
       }
    }
 }
@@ -66,6 +84,9 @@
          color: $black;
          font-weight: 700;
          font-size: 1.7rem;
+         @include mobile{
+            font-size: 1.5rem;
+         }
       }
    }
    &--text {
@@ -88,6 +109,9 @@
          }
          span{
             font-weight: 700;
+         }
+         @include mobile{
+            font-size: 1.5rem;
          }
       }
    }
