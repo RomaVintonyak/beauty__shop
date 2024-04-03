@@ -3688,9 +3688,39 @@ a:focus {
     color: #000000;
 }
 
+@media (max-width: 991px) {
+    .basket__row--title h3 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 991px) {
+    .basket__row--title h3 {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 991px) {
+    .basket__row--title {
+        margin-bottom: 1rem;
+    }
+}
+
 .basket__row--footer {
     text-align: right;
     margin-top: 2rem;
+}
+
+@media (max-width: 991px) {
+    .basket__row--footer {
+        margin-top: 1rem;
+    }
+}
+
+@media (max-width: 991px) {
+    .basket {
+        padding: 2rem 0;
+    }
 }
 
 .tovar__block {
@@ -3715,8 +3745,26 @@ a:focus {
     transition: color 0.2s linear;
 }
 
+@media (max-width: 991px) {
+    .tovar__block--delete button i {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .tovar__block--delete button i {
+        font-size: 1.4rem;
+    }
+}
+
 .tovar__block--delete button:hover i {
     color: #000000;
+}
+
+@media (max-width: 991px) {
+    .tovar__block--delete {
+        width: 4%;
+    }
 }
 
 .tovar__block--content {
@@ -3728,12 +3776,39 @@ a:focus {
     padding: 1rem;
 }
 
+@media (max-width: 576px) {
+    .tovar__block--content {
+        width: 92%;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+}
+
 .tovar__block:last-child {
     margin-bottom: 0;
 }
 
+@media (max-width: 991px) {
+    .tovar__block {
+        margin-bottom: 1rem;
+    }
+}
+
 .tovar__img {
     width: 15%;
+}
+
+@media (max-width: 576px) {
+    .tovar__img {
+        margin-bottom: 1rem;
+        width: 20%;
+    }
+}
+
+@media (max-width: 450px) {
+    .tovar__img {
+        width: 35%;
+    }
 }
 
 .tovar__opys {
@@ -3748,11 +3823,49 @@ a:focus {
     margin-bottom: 1rem;
 }
 
+@media (max-width: 991px) {
+    .tovar__opys h3 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .tovar__opys h3 {
+        font-size: 1.3rem;
+        margin-bottom: 0.1rem;
+    }
+}
+
 .tovar__opys span {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
     color: #000000;
     font-size: 1.7rem;
+}
+
+@media (max-width: 991px) {
+    .tovar__opys span {
+        font-weight: 500;
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .tovar__opys span {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .tovar__opys {
+        width: 70%;
+    }
+}
+
+@media (max-width: 450px) {
+    .tovar__opys {
+        width: 90%;
+    }
 }
 
 .tovar__count {
@@ -3772,6 +3885,12 @@ a:focus {
     color: #000000;
     font-size: 1.7rem;
     transition: color 0.2s linear;
+}
+
+@media (max-width: 991px) {
+    .tovar__count button i {
+        font-size: 1.2rem;
+    }
 }
 
 .tovar__count button:hover i {
@@ -3794,6 +3913,32 @@ a:focus {
     color: #000000;
 }
 
+@media (max-width: 991px) {
+    .tovar__count input {
+        font-weight: 500;
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .tovar__count {
+        width: 18%;
+    }
+}
+
+@media (max-width: 576px) {
+    .tovar__count {
+        width: 30%;
+    }
+}
+
+@media (max-width: 450px) {
+    .tovar__count {
+        margin-top: 1rem;
+        width: 50%;
+    }
+}
+
 .tovar__summ {
     width: 10%;
     text-align: center;
@@ -3806,6 +3951,25 @@ a:focus {
     font-size: 1.7rem;
 }
 
+@media (max-width: 991px) {
+    .tovar__summ span {
+        font-weight: 500;
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .tovar__summ {
+        width: 25%;
+    }
+}
+
+@media (max-width: 450px) {
+    .tovar__summ {
+        width: 40%;
+    }
+}
+
 .basket__footer--summ {
     margin-bottom: 1rem;
 }
@@ -3815,6 +3979,13 @@ a:focus {
     font-weight: 700;
     color: #000000;
     font-size: 1.8rem;
+}
+
+@media (max-width: 991px) {
+    .basket__footer--summ span {
+        font-weight: 500;
+        font-size: 1.5rem;
+    }
 }
 
 .basket__footer--button button {
@@ -3833,6 +4004,13 @@ a:focus {
 
 .basket__footer--button button:active {
     transform: scale(0.98);
+}
+
+@media (max-width: 768px) {
+    .basket__footer--button button {
+        font-size: 1.5rem;
+        padding: 1rem 1rem;
+    }
 }
 
 /*modal*/
@@ -4415,10 +4593,29 @@ a:focus {
     padding: 2rem;
 }
 
+@media (max-width: 991px) {
+    .basket__modal--body {
+        padding: 1rem;
+        width: 90%;
+    }
+}
+
+@media (max-width: 768px) {
+    .basket__modal--body {
+        width: 98%;
+    }
+}
+
 .basket__modal--content {
     border: 1px solid #d9d9d9;
     padding: 2rem;
     width: 100%;
+}
+
+@media (max-width: 991px) {
+    .basket__modal--content {
+        padding: 1rem;
+    }
 }
 
 .basket__modal--close {
@@ -4435,6 +4632,12 @@ a:focus {
     font-size: 2.6rem;
     color: #d9d9d9;
     transition: color 0.2s linear;
+}
+
+@media (max-width: 768px) {
+    .basket__modal--close button i {
+        font-size: 2rem;
+    }
 }
 
 .basket__modal--close button:focus {
@@ -4460,6 +4663,13 @@ a:focus {
     font-weight: 700;
 }
 
+@media (max-width: 768px) {
+    .basket__modal--title h3 {
+        font-weight: 500;
+        font-size: 1.7rem;
+    }
+}
+
 .basket__modal--form {
     width: 100%;
 }
@@ -4479,6 +4689,12 @@ a:focus {
     margin-bottom: 0.2rem;
 }
 
+@media (max-width: 768px) {
+    .basket__form--block label {
+        font-size: 1.4rem;
+    }
+}
+
 .basket__form--block input {
     border: 1px solid #d9d9d9;
     width: 100%;
@@ -4493,6 +4709,14 @@ a:focus {
 
 .basket__form--block input:focus {
     border: 1px solid #14aba0;
+}
+
+@media (max-width: 768px) {
+    .basket__form--block input {
+        font-size: 1.4rem;
+        padding: 0.2rem;
+        height: 3rem;
+    }
 }
 
 .basket__form--block p {
@@ -4520,6 +4744,20 @@ a:focus {
     border: 1px solid #14aba0;
 }
 
+@media (max-width: 768px) {
+    .basket__form--block select {
+        font-size: 1.4rem;
+        padding: 0.2rem;
+        height: 3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .basket__form--block {
+        margin-bottom: 0.7rem;
+    }
+}
+
 .basket__form--button {
     margin-bottom: 0.5rem;
 }
@@ -4540,6 +4778,13 @@ a:focus {
 
 .basket__form--button button:active {
     transform: scale(0.98);
+}
+
+@media (max-width: 768px) {
+    .basket__form--button button {
+        font-size: 1.4rem;
+        padding: 1rem 1rem;
+    }
 }
 
 .kupivlya__oferta p {

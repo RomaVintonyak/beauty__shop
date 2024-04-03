@@ -457,11 +457,21 @@
       width: 60%;
       background-color: $white;
       padding: 2rem;
+      @include tablet{
+         padding: 1rem;
+         width: 90%;
+      }
+      @include mobile{
+         width: 98%;
+      }
    }
    &--content {
       border: 1px solid $silver-b;
       padding: 2rem;
       width: 100%;
+      @include tablet{
+         padding: 1rem;
+      }
    }
    &--close {
       text-align: right;
@@ -473,6 +483,9 @@
             font-size: 2.6rem;
             color: $silver-b;
             transition: color 0.2s linear;
+            @include mobile{
+               font-size: 2rem;
+            }
          }
          &:focus {
             outline: none;
@@ -492,6 +505,10 @@
          color: $black;
          font-size: 2rem;
          font-weight: 700;
+         @include mobile{
+            font-weight: 500;
+            font-size: 1.7rem;
+         }
       }
    }
    &--form {
@@ -510,6 +527,9 @@
          font-weight: 500;
          font-size: 1.7rem;
          margin-bottom: 0.2rem;
+         @include mobile{
+            font-size: 1.4rem;
+         }
       }
       input {
          border: 1px solid $silver-b;
@@ -523,6 +543,11 @@
          font-weight: 500;
          &:focus {
             border: 1px solid $main;
+         }
+         @include mobile{
+            font-size: 1.4rem;
+            padding: 0.2rem;
+            height: 3rem;
          }
       }
       p {
@@ -546,6 +571,14 @@
          &:focus {
             border: 1px solid $main;
          }
+         @include mobile{
+            font-size: 1.4rem;
+            padding: 0.2rem;
+            height: 3rem;
+         }
+      }
+      @include mobile{
+         margin-bottom: 0.7rem;
       }
    }
    &--button {
@@ -563,6 +596,10 @@
          }
          &:active {
             transform: scale(0.98);
+         }
+         @include mobile{
+            font-size: 1.4rem;
+            padding: 1rem 1rem;
          }
       }
    }

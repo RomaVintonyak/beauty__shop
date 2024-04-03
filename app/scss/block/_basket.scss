@@ -11,12 +11,27 @@
             font-weight: 700;
             font-size: 2.7rem;
             color: $black;
+            @include tablet {
+               font-size: 2rem;
+            }
+            @include tablet {
+               font-size: 1.8rem;
+            }
+         }
+         @include tablet {
+            margin-bottom: 1rem;
          }
       }
       &--footer {
          text-align: right;
          margin-top: 2rem;
+         @include tablet {
+            margin-top: 1rem;
+         }
       }
+   }
+   @include tablet {
+      padding: 2rem 0;
    }
 }
 .tovar__block {
@@ -33,12 +48,21 @@
             font-size: 2rem;
             color: $silver-b;
             transition: color 0.2s linear;
+            @include tablet {
+               font-size: 1.8rem;
+            }
+            @include mobile {
+               font-size: 1.4rem;
+            }
          }
          &:hover {
             i {
                color: $black;
             }
          }
+      }
+      @include tablet {
+         width: 4%;
       }
    }
    &--content {
@@ -48,13 +72,28 @@
       justify-content: space-between;
       border: 1px solid $silver-b;
       padding: 1rem;
+      @include mobile-sm {
+         width: 92%;
+         flex-wrap: wrap;
+         justify-content: space-evenly;
+      }
    }
    &:last-child {
       margin-bottom: 0;
    }
+   @include tablet {
+      margin-bottom: 1rem;
+   }
 }
 .tovar__img {
    width: 15%;
+   @include mobile-sm {
+      margin-bottom: 1rem;
+      width: 20%;
+   }
+   @include mobile-xsm {
+      width: 35%;
+   }
 }
 .tovar__opys {
    width: 50%;
@@ -64,12 +103,32 @@
       color: $black;
       font-size: 1.7rem;
       margin-bottom: 1rem;
+      @include tablet {
+         font-size: 1.5rem;
+      }
+      @include mobile-sm {
+         font-size: 1.3rem;
+         margin-bottom: 0.1rem;
+      }
    }
    span {
       font-family: $font;
       font-weight: 700;
       color: $black;
       font-size: 1.7rem;
+      @include tablet {
+         font-weight: 500;
+         font-size: 1.5rem;
+      }
+      @include mobile-sm {
+         font-size: 1.3rem;
+      }
+   }
+   @include mobile-sm {
+      width: 70%;
+   }
+   @include mobile-xsm {
+      width: 90%;
    }
 }
 .tovar__count {
@@ -85,6 +144,9 @@
          color: $black;
          font-size: 1.7rem;
          transition: color 0.2s linear;
+         @include tablet {
+            font-size: 1.2rem;
+         }
       }
       &:hover {
          i {
@@ -105,6 +167,20 @@
       font-weight: 700;
       font-size: 1.7rem;
       color: $black;
+      @include tablet {
+         font-weight: 500;
+         font-size: 1.5rem;
+      }
+   }
+   @include mobile {
+      width: 18%;
+   }
+   @include mobile-sm {
+      width: 30%;
+   }
+   @include mobile-xsm {
+      margin-top: 1rem;
+      width: 50%;
    }
 }
 .tovar__summ {
@@ -115,6 +191,16 @@
       font-weight: 700;
       color: $black;
       font-size: 1.7rem;
+      @include tablet {
+         font-weight: 500;
+         font-size: 1.5rem;
+      }
+   }
+   @include mobile-sm {
+      width: 25%;
+   }
+   @include mobile-xsm {
+      width: 40%;
    }
 }
 .basket__footer--summ {
@@ -124,6 +210,10 @@
       font-weight: 700;
       color: $black;
       font-size: 1.8rem;
+      @include tablet {
+         font-weight: 500;
+         font-size: 1.5rem;
+      }
    }
 }
 .basket__footer--button {
@@ -140,6 +230,10 @@
       }
       &:active {
          transform: scale(0.98);
+      }
+      @include mobile {
+         font-size: 1.5rem;
+         padding: 1rem 1rem;
       }
    }
 }

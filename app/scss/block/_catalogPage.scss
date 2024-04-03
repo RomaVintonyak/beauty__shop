@@ -60,6 +60,8 @@
       display: flex;
       border: 1px solid $silver-b;
       input {
+         -webkit-appearance: none;
+         -moz-appearance: none;
          appearance: none;
          &:checked + label {
             background-color: $main;
