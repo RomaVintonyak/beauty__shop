@@ -217,19 +217,21 @@
    }
 }
 .basket__footer--button {
-   button {
+   a {
       font-family: $font;
+      text-decoration: none;
       font-weight: 500;
       color: $white;
       font-size: 1.8rem;
       background-color: $main;
       padding: 1rem 2rem;
       transition: background-color 0.1s linear;
+      display: inline-block;
       &:hover {
          background-color: $background;
       }
       &:active {
-         transform: scale(0.98);
+         transform: scale(0.97);
       }
       @include mobile {
          font-size: 1.5rem;

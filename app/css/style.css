@@ -1191,18 +1191,17 @@ a:focus {
     transition: border-color 0.2s linear;
 }
 
-.product__slider--prev span {
-    display: block;
-    width: 1rem;
-    height: 1rem;
-    border-top: 1px solid #000000;
-    border-left: 1px solid #000000;
-    transform: rotate(-45deg);
-    margin-left: 0.5rem;
+.product__slider--prev i {
+    font-size: 1.6rem;
+    transition: color 0.2s linear;
 }
 
 .product__slider--prev:hover {
     border-color: #000000;
+}
+
+.product__slider--prev:hover i {
+    color: #2e9891;
 }
 
 .product__slider--next {
@@ -1222,18 +1221,18 @@ a:focus {
     transition: border-color 0.2s linear;
 }
 
-.product__slider--next span {
-    display: block;
-    width: 1rem;
-    height: 1rem;
-    border-top: 1px solid #000000;
-    border-right: 1px solid #000000;
-    transform: rotate(45deg);
-    margin-right: 0.5rem;
+.product__slider--next i {
+    font-size: 1.6rem;
+    transition: color 0.2s linear;
+    margin-left: 0.5rem;
 }
 
 .product__slider--next:hover {
     border-color: #000000;
+}
+
+.product__slider--next:hover i {
+    color: #2e9891;
 }
 
 .product__card {
@@ -2850,9 +2849,7 @@ a:focus {
 }
 
 .catalog__sort--radio input {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
+    display: none;
 }
 
 .catalog__sort--radio input:checked + label {
@@ -2971,27 +2968,42 @@ a:focus {
     text-align: center;
 }
 
-.pagination__link {
-    display: inline-block;
+.pagination .nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pagination .nav-links .page-numbers {
+    display: block;
     font-family: "Raleway", sans-serif;
     text-decoration: none;
     color: #000000;
     font-size: 1.5rem;
+    font-weight: 500;
     border: 1px solid #d9d9d9;
     width: 3rem;
     height: 3rem;
     background-color: #f7f7f7;
     line-height: 2.8rem;
-    margin-left: 0.2rem;
+    margin-left: 0.5rem;
+    transition: background-color 0.2s linear;
 }
 
-.pagination__link:first-child {
+.pagination .nav-links .page-numbers:first-child {
     margin-left: 0;
 }
 
-.pagination__link--current {
-    background-color: #2e9891;
-    color: #ffffff;
+.pagination .nav-links .page-numbers:hover {
+    cursor: pointer;
+}
+
+.pagination .nav-links .current {
+    background-color: #14aba0;
+}
+
+.pagination .nav-links .next {
+    width: 6rem;
 }
 
 @media (max-width: 991px) {
@@ -3177,14 +3189,7 @@ a:focus {
     }
 }
 
-.block__size {
-    margin-bottom: 1.5rem;
-}
-
 .block__size input {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
     display: none;
 }
 
@@ -3201,6 +3206,7 @@ a:focus {
     font-size: 1.7rem;
     background-color: #d9d9d9;
     display: inline-block;
+    margin-bottom: 1.5rem;
 }
 
 .block__size label:hover {
@@ -3211,6 +3217,7 @@ a:focus {
     .block__size label {
         font-size: 1.5rem;
         padding: 0.5rem 0.5rem;
+        margin-bottom: 1.5rem;
     }
 }
 
@@ -3218,12 +3225,6 @@ a:focus {
     .block__size label {
         font-weight: 300;
         font-size: 1.3rem;
-    }
-}
-
-@media (max-width: 768px) {
-    .block__size {
-        margin-bottom: 1rem;
     }
 }
 
@@ -3672,6 +3673,314 @@ a:focus {
     }
 }
 
+/*404 page*/
+.error {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #d9d9d9;
+}
+
+.error__title {
+    margin-bottom: 2rem;
+}
+
+.error__title h1 {
+    font-size: 5rem;
+    font-weight: 500;
+    font-family: "Raleway", sans-serif;
+    color: #14aba0;
+}
+
+@media (max-width: 768px) {
+    .error__title h1 {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 450px) {
+    .error__title h1 {
+        font-size: 2rem;
+    }
+}
+
+.error__link a {
+    display: block;
+    text-decoration: none;
+    font-weight: 500;
+    font-family: "Raleway", sans-serif;
+    font-size: 3rem;
+    color: #14aba0;
+    transition: color 0.2s linear;
+}
+
+.error__link a:hover {
+    color: #000000;
+}
+
+@media (max-width: 768px) {
+    .error__link a {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 450px) {
+    .error__link a {
+        font-size: 1.7rem;
+    }
+}
+
+/*order*/
+.basket__order {
+    width: 100%;
+}
+
+.basket__order--mask {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #d9d9d9;
+    padding: 2rem 0;
+}
+
+@media (max-width: 768px) {
+    .basket__order--mask {
+        padding: 1rem 0;
+    }
+}
+
+.basket__order--body {
+    width: 70%;
+    background-color: #ffffff;
+    padding: 2rem;
+}
+
+@media (max-width: 991px) {
+    .basket__order--body {
+        padding: 1rem;
+        width: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+    .basket__order--body {
+        width: 90%;
+    }
+}
+
+@media (max-width: 576px) {
+    .basket__order--body {
+        width: 95%;
+    }
+}
+
+.basket__order--content {
+    border: 1px solid #d9d9d9;
+    padding: 2rem;
+    width: 100%;
+}
+
+@media (max-width: 991px) {
+    .basket__order--content {
+        padding: 1rem;
+    }
+}
+
+.basket__order--close {
+    text-align: right;
+    margin-bottom: 1rem;
+}
+
+.basket__order--close button {
+    border: none;
+    background-color: transparent;
+}
+
+.basket__order--close button i {
+    font-size: 2.6rem;
+    color: #d9d9d9;
+    transition: color 0.2s linear;
+}
+
+@media (max-width: 768px) {
+    .basket__order--close button i {
+        font-size: 2rem;
+    }
+}
+
+.basket__order--close button:focus {
+    outline: none;
+}
+
+.basket__order--close button:hover {
+    cursor: pointer;
+}
+
+.basket__order--close button:hover i {
+    color: #000000;
+}
+
+.basket__order--title {
+    margin-bottom: 1rem;
+}
+
+.basket__order--title h3 {
+    font-family: "Raleway", sans-serif;
+    color: #000000;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+@media (max-width: 768px) {
+    .basket__order--title h3 {
+        font-weight: 500;
+        font-size: 1.7rem;
+    }
+}
+
+.basket__order--form {
+    width: 100%;
+}
+
+.basket__form--block {
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.basket__form--block label {
+    font-family: "Raleway", sans-serif;
+    color: #000000;
+    font-weight: 500;
+    font-size: 1.7rem;
+    margin-bottom: 0.2rem;
+}
+
+@media (max-width: 768px) {
+    .basket__form--block label {
+        font-size: 1.4rem;
+    }
+}
+
+.basket__form--block input {
+    border: 1px solid #d9d9d9;
+    width: 100%;
+    height: 4rem;
+    padding: 0.7rem;
+    margin-bottom: 0.2rem;
+    font-family: "Raleway", sans-serif;
+    color: #000000;
+    font-size: 1.7rem;
+    font-weight: 500;
+}
+
+.basket__form--block input:focus {
+    border: 1px solid #14aba0;
+}
+
+@media (max-width: 768px) {
+    .basket__form--block input {
+        font-size: 1.4rem;
+        padding: 0.2rem;
+        height: 3rem;
+    }
+}
+
+.basket__form--block p {
+    font-weight: 500;
+    font-family: "Raleway", sans-serif;
+    font-size: 1.3rem;
+    color: #14aba0;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.basket__form--block select {
+    border: 1px solid #d9d9d9;
+    width: 100%;
+    height: 4rem;
+    padding: 0.7rem;
+    margin-bottom: 0.2rem;
+    font-family: "Raleway", sans-serif;
+    color: #000000;
+    font-size: 1.7rem;
+    font-weight: 500;
+}
+
+.basket__form--block select:focus {
+    border: 1px solid #14aba0;
+}
+
+@media (max-width: 768px) {
+    .basket__form--block select {
+        font-size: 1.4rem;
+        padding: 0.2rem;
+        height: 3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .basket__form--block {
+        margin-bottom: 0.7rem;
+    }
+}
+
+.basket__form--button {
+    margin-bottom: 0.5rem;
+}
+
+.basket__form--button button {
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    color: #ffffff;
+    font-size: 1.8rem;
+    background-color: #14aba0;
+    padding: 1rem 2rem;
+    transition: background-color 0.1s linear;
+}
+
+.basket__form--button button:hover {
+    background-color: #2e9891;
+}
+
+.basket__form--button button:active {
+    transform: scale(0.98);
+}
+
+@media (max-width: 768px) {
+    .basket__form--button button {
+        font-size: 1.4rem;
+        padding: 1rem 1rem;
+    }
+}
+
+.kupivlya__oferta p {
+    font-family: "Raleway", sans-serif;
+    font-weight: 300;
+    color: #000000;
+    font-size: 1.3rem;
+}
+
+.kupivlya__oferta a {
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    color: #000000;
+    font-size: 1.3rem;
+    text-decoration: none;
+    transition: color 0.2s linear;
+}
+
+.kupivlya__oferta a:hover {
+    color: #2e9891;
+    cursor: pointer;
+}
+
 /*basket page*/
 .basket {
     padding: 4rem 0;
@@ -3988,26 +4297,28 @@ a:focus {
     }
 }
 
-.basket__footer--button button {
+.basket__footer--button a {
     font-family: "Raleway", sans-serif;
+    text-decoration: none;
     font-weight: 500;
     color: #ffffff;
     font-size: 1.8rem;
     background-color: #14aba0;
     padding: 1rem 2rem;
     transition: background-color 0.1s linear;
+    display: inline-block;
 }
 
-.basket__footer--button button:hover {
+.basket__footer--button a:hover {
     background-color: #2e9891;
 }
 
-.basket__footer--button button:active {
-    transform: scale(0.98);
+.basket__footer--button a:active {
+    transform: scale(0.97);
 }
 
 @media (max-width: 768px) {
-    .basket__footer--button button {
+    .basket__footer--button a {
         font-size: 1.5rem;
         padding: 1rem 1rem;
     }
@@ -4555,257 +4866,6 @@ a:focus {
         font-size: 1.5rem;
         padding: 0.5rem 0.3rem;
     }
-}
-
-/*==============basket modal==============*/
-.basket__modal {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 2000;
-    width: 100%;
-    height: 100vh;
-    opacity: 0;
-    transform-origin: center center;
-    transform: scale(0);
-    visibility: hidden;
-    transition: transform 0.5s linear, opacity 0.5s linear, visibility 0.5s linear;
-}
-
-.basket__modal--open {
-    transform: scale(1);
-    opacity: 1;
-    visibility: visible;
-}
-
-.basket__modal--mask {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: rgba(0, 0, 0, 0.7);
-}
-
-.basket__modal--body {
-    width: 60%;
-    background-color: #ffffff;
-    padding: 2rem;
-}
-
-@media (max-width: 991px) {
-    .basket__modal--body {
-        padding: 1rem;
-        width: 90%;
-    }
-}
-
-@media (max-width: 768px) {
-    .basket__modal--body {
-        width: 98%;
-    }
-}
-
-.basket__modal--content {
-    border: 1px solid #d9d9d9;
-    padding: 2rem;
-    width: 100%;
-}
-
-@media (max-width: 991px) {
-    .basket__modal--content {
-        padding: 1rem;
-    }
-}
-
-.basket__modal--close {
-    text-align: right;
-    margin-bottom: 1rem;
-}
-
-.basket__modal--close button {
-    border: none;
-    background-color: transparent;
-}
-
-.basket__modal--close button i {
-    font-size: 2.6rem;
-    color: #d9d9d9;
-    transition: color 0.2s linear;
-}
-
-@media (max-width: 768px) {
-    .basket__modal--close button i {
-        font-size: 2rem;
-    }
-}
-
-.basket__modal--close button:focus {
-    outline: none;
-}
-
-.basket__modal--close button:hover {
-    cursor: pointer;
-}
-
-.basket__modal--close button:hover i {
-    color: #000000;
-}
-
-.basket__modal--title {
-    margin-bottom: 1rem;
-}
-
-.basket__modal--title h3 {
-    font-family: "Raleway", sans-serif;
-    color: #000000;
-    font-size: 2rem;
-    font-weight: 700;
-}
-
-@media (max-width: 768px) {
-    .basket__modal--title h3 {
-        font-weight: 500;
-        font-size: 1.7rem;
-    }
-}
-
-.basket__modal--form {
-    width: 100%;
-}
-
-.basket__form--block {
-    margin-bottom: 1rem;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-
-.basket__form--block label {
-    font-family: "Raleway", sans-serif;
-    color: #000000;
-    font-weight: 500;
-    font-size: 1.7rem;
-    margin-bottom: 0.2rem;
-}
-
-@media (max-width: 768px) {
-    .basket__form--block label {
-        font-size: 1.4rem;
-    }
-}
-
-.basket__form--block input {
-    border: 1px solid #d9d9d9;
-    width: 100%;
-    height: 4rem;
-    padding: 0.7rem;
-    margin-bottom: 0.2rem;
-    font-family: "Raleway", sans-serif;
-    color: #000000;
-    font-size: 1.7rem;
-    font-weight: 500;
-}
-
-.basket__form--block input:focus {
-    border: 1px solid #14aba0;
-}
-
-@media (max-width: 768px) {
-    .basket__form--block input {
-        font-size: 1.4rem;
-        padding: 0.2rem;
-        height: 3rem;
-    }
-}
-
-.basket__form--block p {
-    font-weight: 500;
-    font-family: "Raleway", sans-serif;
-    font-size: 1.3rem;
-    color: #14aba0;
-    opacity: 0;
-    visibility: hidden;
-}
-
-.basket__form--block select {
-    border: 1px solid #d9d9d9;
-    width: 100%;
-    height: 4rem;
-    padding: 0.7rem;
-    margin-bottom: 0.2rem;
-    font-family: "Raleway", sans-serif;
-    color: #000000;
-    font-size: 1.7rem;
-    font-weight: 500;
-}
-
-.basket__form--block select:focus {
-    border: 1px solid #14aba0;
-}
-
-@media (max-width: 768px) {
-    .basket__form--block select {
-        font-size: 1.4rem;
-        padding: 0.2rem;
-        height: 3rem;
-    }
-}
-
-@media (max-width: 768px) {
-    .basket__form--block {
-        margin-bottom: 0.7rem;
-    }
-}
-
-.basket__form--button {
-    margin-bottom: 0.5rem;
-}
-
-.basket__form--button button {
-    font-family: "Raleway", sans-serif;
-    font-weight: 500;
-    color: #ffffff;
-    font-size: 1.8rem;
-    background-color: #14aba0;
-    padding: 1rem 2rem;
-    transition: background-color 0.1s linear;
-}
-
-.basket__form--button button:hover {
-    background-color: #2e9891;
-}
-
-.basket__form--button button:active {
-    transform: scale(0.98);
-}
-
-@media (max-width: 768px) {
-    .basket__form--button button {
-        font-size: 1.4rem;
-        padding: 1rem 1rem;
-    }
-}
-
-.kupivlya__oferta p {
-    font-family: "Raleway", sans-serif;
-    font-weight: 300;
-    color: #000000;
-    font-size: 1.3rem;
-}
-
-.kupivlya__oferta a {
-    font-family: "Raleway", sans-serif;
-    font-weight: 500;
-    color: #000000;
-    font-size: 1.3rem;
-    text-decoration: none;
-    transition: color 0.2s linear;
-}
-
-.kupivlya__oferta a:hover {
-    color: #2e9891;
-    cursor: pointer;
 }
 
 /*==============vendor=============*/

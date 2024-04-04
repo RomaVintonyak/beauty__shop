@@ -1,0 +1,47 @@
+//*mixins*//
+@import "./mixin.scss";
+
+.error {
+   width: 100%;
+   height: 100vh;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   background-color: $silver-b;
+   &__title {
+      margin-bottom: 2rem;
+      h1 {
+         font-size: 5rem;
+         font-weight: 500;
+         font-family: $font;
+         color: $main;
+         @include mobile {
+            font-size: 3rem;
+         }
+         @include mobile-xsm {
+            font-size: 2rem;
+         }
+      }
+   }
+   &__link {
+      a {
+         display: block;
+         text-decoration: none;
+         font-weight: 500;
+         font-family: $font;
+         font-size: 3rem;
+         color: $main;
+         transition: color 0.2s linear;
+         &:hover {
+            color: $black;
+         }
+         @include mobile {
+            font-size: 2rem;
+         }
+         @include mobile-xsm {
+            font-size: 1.7rem;
+         }
+      }
+   }
+}

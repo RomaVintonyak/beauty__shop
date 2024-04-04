@@ -1,0 +1,191 @@
+//*mixins*//
+@import "./mixin.scss";
+
+.basket__order {
+   width: 100%;
+   &--mask {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: $silver-b;
+      padding: 2rem 0;
+      @include mobile{
+         padding: 1rem 0;
+      }
+   }
+   &--body {
+      width: 70%;
+      background-color: $white;
+      padding: 2rem;
+      @include tablet{
+         padding: 1rem;
+         width: 80%;
+      }
+      @include mobile{
+         width: 90%;
+      }
+      @include mobile-sm{
+         width: 95%;
+      }
+   }
+   &--content {
+      border: 1px solid $silver-b;
+      padding: 2rem;
+      width: 100%;
+      @include tablet{
+         padding: 1rem;
+      }
+   }
+   &--close {
+      text-align: right;
+      margin-bottom: 1rem;
+      button {
+         border: none;
+         background-color: transparent;
+         i {
+            font-size: 2.6rem;
+            color: $silver-b;
+            transition: color 0.2s linear;
+            @include mobile{
+               font-size: 2rem;
+            }
+         }
+         &:focus {
+            outline: none;
+         }
+         &:hover {
+            cursor: pointer;
+            i {
+               color: $black;
+            }
+         }
+      }
+   }
+   &--title {
+      margin-bottom: 1rem;
+      h3 {
+         font-family: $font;
+         color: $black;
+         font-size: 2rem;
+         font-weight: 700;
+         @include mobile{
+            font-weight: 500;
+            font-size: 1.7rem;
+         }
+      }
+   }
+   &--form {
+      width: 100%;
+   }
+}
+.basket__form {
+   &--block {
+      margin-bottom: 1rem;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      label {
+         font-family: $font;
+         color: $black;
+         font-weight: 500;
+         font-size: 1.7rem;
+         margin-bottom: 0.2rem;
+         @include mobile{
+            font-size: 1.4rem;
+         }
+      }
+      input {
+         border: 1px solid $silver-b;
+         width: 100%;
+         height: 4rem;
+         padding: 0.7rem;
+         margin-bottom: 0.2rem;
+         font-family: $font;
+         color: $black;
+         font-size: 1.7rem;
+         font-weight: 500;
+         &:focus {
+            border: 1px solid $main;
+         }
+         @include mobile{
+            font-size: 1.4rem;
+            padding: 0.2rem;
+            height: 3rem;
+         }
+      }
+      p {
+         font-weight: 500;
+         font-family: $font;
+         font-size: 1.3rem;
+         color: $main;
+         opacity: 0;
+         visibility: hidden;
+      }
+      select {
+         border: 1px solid $silver-b;
+         width: 100%;
+         height: 4rem;
+         padding: 0.7rem;
+         margin-bottom: 0.2rem;
+         font-family: $font;
+         color: $black;
+         font-size: 1.7rem;
+         font-weight: 500;
+         &:focus {
+            border: 1px solid $main;
+         }
+         @include mobile{
+            font-size: 1.4rem;
+            padding: 0.2rem;
+            height: 3rem;
+         }
+      }
+      @include mobile{
+         margin-bottom: 0.7rem;
+      }
+   }
+   &--button {
+      margin-bottom: 0.5rem;
+      button {
+         font-family: $font;
+         font-weight: 500;
+         color: $white;
+         font-size: 1.8rem;
+         background-color: $main;
+         padding: 1rem 2rem;
+         transition: background-color 0.1s linear;
+         &:hover {
+            background-color: $background;
+         }
+         &:active {
+            transform: scale(0.98);
+         }
+         @include mobile{
+            font-size: 1.4rem;
+            padding: 1rem 1rem;
+         }
+      }
+   }
+}
+.kupivlya__oferta {
+   p {
+      font-family: $font;
+      font-weight: 300;
+      color: $black;
+      font-size: 1.3rem;
+   }
+   a {
+      font-family: $font;
+      font-weight: 500;
+      color: $black;
+      font-size: 1.3rem;
+      text-decoration: none;
+      transition: color 0.2s linear;
+      &:hover {
+         color: $background;
+         cursor: pointer;
+      }
+   }
+}

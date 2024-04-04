@@ -115,9 +115,7 @@
    }
 }
 .block__size {
-   margin-bottom: 1.5rem;
    input {
-      appearance: none;
       display: none;
       &:checked + label {
          background-color: $main;
@@ -132,20 +130,19 @@
       font-size: 1.7rem;
       background-color: $silver-b;
       display: inline-block;
+      margin-bottom: 1.5rem;
       &:hover {
          cursor: pointer;
       }
       @include mobile {
          font-size: 1.5rem;
          padding: 0.5rem 0.5rem;
+         margin-bottom: 1.5rem;
       }
       @include mobile-xxsm {
          font-weight: 300;
          font-size: 1.3rem;
       }
-   }
-   @include mobile {
-      margin-bottom: 1rem;
    }
 }
 .block__btn {

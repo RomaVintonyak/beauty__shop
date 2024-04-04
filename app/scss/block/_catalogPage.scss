@@ -60,9 +60,7 @@
       display: flex;
       border: 1px solid $silver-b;
       input {
-         -webkit-appearance: none;
-         -moz-appearance: none;
-         appearance: none;
+         display: none;
          &:checked + label {
             background-color: $main;
             color: $white;
@@ -140,24 +138,36 @@
 .pagination {
    margin-top: 4rem;
    text-align: center;
-   &__link {
-      display: inline-block;
-      font-family: $font;
-      text-decoration: none;
-      color: $black;
-      font-size: 1.5rem;
-      border: 1px solid $silver-b;
-      width: 3rem;
-      height: 3rem;
-      background-color: $silver;
-      line-height: 2.8rem;
-      margin-left: 0.2rem;
-      &:first-child {
-         margin-left: 0;
+   .nav-links {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .page-numbers {
+         display: block;
+         font-family: $font;
+         text-decoration: none;
+         color: $black;
+         font-size: 1.5rem;
+         font-weight: 500;
+         border: 1px solid $silver-b;
+         width: 3rem;
+         height: 3rem;
+         background-color: $silver;
+         line-height: 2.8rem;
+         margin-left: 0.5rem;
+         transition: background-color 0.2s linear;
+         &:first-child {
+            margin-left: 0;
+         }
+         &:hover {
+            cursor: pointer;
+         }
       }
-      &--current {
-         background-color: $background;
-         color: $white;
+      .current {
+         background-color: $main;
+      }
+      .next {
+         width: 6rem;
       }
    }
    @include tablet {
