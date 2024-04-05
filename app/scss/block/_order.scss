@@ -11,7 +11,7 @@
       justify-content: center;
       background-color: $silver-b;
       padding: 2rem 0;
-      @include mobile{
+      @include mobile {
          padding: 1rem 0;
       }
    }
@@ -19,14 +19,14 @@
       width: 70%;
       background-color: $white;
       padding: 2rem;
-      @include tablet{
+      @include tablet {
          padding: 1rem;
          width: 80%;
       }
-      @include mobile{
+      @include mobile {
          width: 90%;
       }
-      @include mobile-sm{
+      @include mobile-sm {
          width: 95%;
       }
    }
@@ -34,7 +34,7 @@
       border: 1px solid $silver-b;
       padding: 2rem;
       width: 100%;
-      @include tablet{
+      @include tablet {
          padding: 1rem;
       }
    }
@@ -48,7 +48,7 @@
             font-size: 2.6rem;
             color: $silver-b;
             transition: color 0.2s linear;
-            @include mobile{
+            @include mobile {
                font-size: 2rem;
             }
          }
@@ -70,7 +70,7 @@
          color: $black;
          font-size: 2rem;
          font-weight: 700;
-         @include mobile{
+         @include mobile {
             font-weight: 500;
             font-size: 1.7rem;
          }
@@ -92,7 +92,7 @@
          font-weight: 500;
          font-size: 1.7rem;
          margin-bottom: 0.2rem;
-         @include mobile{
+         @include mobile {
             font-size: 1.4rem;
          }
       }
@@ -109,7 +109,7 @@
          &:focus {
             border: 1px solid $main;
          }
-         @include mobile{
+         @include mobile {
             font-size: 1.4rem;
             padding: 0.2rem;
             height: 3rem;
@@ -136,19 +136,20 @@
          &:focus {
             border: 1px solid $main;
          }
-         @include mobile{
+         @include mobile {
             font-size: 1.4rem;
             padding: 0.2rem;
             height: 3rem;
          }
       }
-      @include mobile{
+      @include mobile {
          margin-bottom: 0.7rem;
       }
    }
    &--button {
       margin-bottom: 0.5rem;
-      button {
+      button,
+      input[type="submit"] {
          font-family: $font;
          font-weight: 500;
          color: $white;
@@ -162,7 +163,7 @@
          &:active {
             transform: scale(0.98);
          }
-         @include mobile{
+         @include mobile {
             font-size: 1.4rem;
             padding: 1rem 1rem;
          }

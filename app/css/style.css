@@ -751,26 +751,26 @@ a:focus {
 @media (max-width: 991px) {
     .product__menu--item {
         width: 10%;
-        height: 2rem;
+        height: 3rem;
     }
 }
 
 @media (max-width: 768px) {
     .product__menu--item {
         width: 15%;
+        height: 2rem;
     }
 }
 
 @media (max-width: 576px) {
     .product__menu--item {
         width: 20%;
-        height: 1.5rem;
     }
 }
 
 @media (max-width: 450px) {
     .product__menu--item {
-        width: 30%;
+        width: 25%;
     }
 }
 
@@ -797,6 +797,12 @@ a:focus {
     .product__menu--link {
         font-weight: 300;
         font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 350px) {
+    .product__menu--link {
+        font-size: 1rem;
     }
 }
 
@@ -2879,28 +2885,28 @@ a:focus {
 @media (max-width: 768px) {
     .catalog__sort--radio label {
         font-size: 1.5rem;
-        padding: 0.3rem 0.6rem;
+        padding: 0.4rem 0.6rem;
     }
 }
 
 @media (max-width: 576px) {
     .catalog__sort--radio label {
         font-size: 1.4rem;
-        padding: 0.2rem 0.5rem;
+        padding: 0.4rem 0.5rem;
     }
 }
 
 @media (max-width: 450px) {
     .catalog__sort--radio label {
         font-size: 1.3rem;
-        padding: 0.1rem 0.4rem;
+        padding: 0.3rem 0.4rem;
     }
 }
 
 @media (max-width: 350px) {
     .catalog__sort--radio label {
         font-size: 1.2rem;
-        padding: 0.1rem 0.3rem;
+        padding: 0.2rem 0.3rem;
     }
 }
 
@@ -3641,29 +3647,56 @@ a:focus {
     }
 }
 
-.reviews__form form button {
+.reviews__form form button,
+.reviews__form form input[type="submit"] {
+    width: 10%;
+    display: block;
     font-family: "Raleway", sans-serif;
     font-weight: 500;
     color: #000000;
     font-size: 1.7rem;
     background-color: #14aba0;
-    padding: 1rem 2rem;
+    padding: 1rem 0;
     transition: background-color 0.1s linear, color 0.1s linear;
 }
 
-.reviews__form form button:hover {
+.reviews__form form button:hover,
+.reviews__form form input[type="submit"]:hover {
     background-color: #2e9891;
     color: #ffffff;
 }
 
-.reviews__form form button:active {
+.reviews__form form button:active,
+.reviews__form form input[type="submit"]:active {
     transform: scale(0.98);
 }
 
+@media (max-width: 991px) {
+    .reviews__form form button,
+  .reviews__form form input[type="submit"] {
+        width: 15%;
+    }
+}
+
 @media (max-width: 768px) {
-    .reviews__form form button {
+    .reviews__form form button,
+  .reviews__form form input[type="submit"] {
         font-size: 1.5rem;
-        padding: 0.5rem 1rem;
+        width: 20%;
+    }
+}
+
+@media (max-width: 576px) {
+    .reviews__form form button,
+  .reviews__form form input[type="submit"] {
+        width: 30%;
+    }
+}
+
+@media (max-width: 450px) {
+    .reviews__form form button,
+  .reviews__form form input[type="submit"] {
+        width: 40%;
     }
 }
 
@@ -3935,7 +3968,8 @@ a:focus {
     margin-bottom: 0.5rem;
 }
 
-.basket__form--button button {
+.basket__form--button button,
+.basket__form--button input[type="submit"] {
     font-family: "Raleway", sans-serif;
     font-weight: 500;
     color: #ffffff;
@@ -3945,16 +3979,19 @@ a:focus {
     transition: background-color 0.1s linear;
 }
 
-.basket__form--button button:hover {
+.basket__form--button button:hover,
+.basket__form--button input[type="submit"]:hover {
     background-color: #2e9891;
 }
 
-.basket__form--button button:active {
+.basket__form--button button:active,
+.basket__form--button input[type="submit"]:active {
     transform: scale(0.98);
 }
 
 @media (max-width: 768px) {
-    .basket__form--button button {
+    .basket__form--button button,
+  .basket__form--button input[type="submit"] {
         font-size: 1.4rem;
         padding: 1rem 1rem;
     }
@@ -4516,7 +4553,8 @@ a:focus {
     visibility: hidden;
 }
 
-.login__form--button button {
+.login__form--button button,
+.login__form--button input[type="submit"] {
     background-color: #d9d9d9;
     font-family: "Raleway", sans-serif;
     font-size: 1.7rem;
@@ -4528,51 +4566,60 @@ a:focus {
     transition: background-color 0.2s linear, color 0.2s linear;
 }
 
-.login__form--button button i {
+.login__form--button button i,
+.login__form--button input[type="submit"] i {
     margin-left: 0.5rem;
     color: #000000;
     font-size: 1.7rem;
     transition: color 0.2s linear;
 }
 
-.login__form--button button:hover {
+.login__form--button button:hover,
+.login__form--button input[type="submit"]:hover {
     background-color: #2e9891;
     color: #ffffff;
     cursor: pointer;
 }
 
-.login__form--button button:hover i {
+.login__form--button button:hover i,
+.login__form--button input[type="submit"]:hover i {
     color: #ffffff;
 }
 
-.login__form--button button:active {
+.login__form--button button:active,
+.login__form--button input[type="submit"]:active {
     transform: scale(0.97);
 }
 
-.login__form--button button:last-child {
+.login__form--button button:last-child,
+.login__form--button input[type="submit"]:last-child {
     margin-left: 1.5rem;
     background-color: transparent;
     border: none;
 }
 
-.login__form--button button:last-child:hover {
+.login__form--button button:last-child:hover,
+.login__form--button input[type="submit"]:last-child:hover {
     color: #2e9891;
 }
 
 @media (max-width: 1366px) {
-    .login__form--button button:last-child {
+    .login__form--button button:last-child,
+  .login__form--button input[type="submit"]:last-child {
         margin-left: 0.5rem;
     }
 }
 
 @media (max-width: 991px) {
-    .login__form--button button:last-child {
+    .login__form--button button:last-child,
+  .login__form--button input[type="submit"]:last-child {
         margin-left: 0;
     }
 }
 
 @media (max-width: 768px) {
-    .login__form--button button {
+    .login__form--button button,
+  .login__form--button input[type="submit"] {
         font-size: 1.5rem;
         padding: 0.5rem 0.3rem;
     }
@@ -4628,7 +4675,8 @@ a:focus {
     visibility: hidden;
 }
 
-.register__form--button button {
+.register__form--button button,
+.register__form--button input[type="submit"] {
     background-color: #d9d9d9;
     font-family: "Raleway", sans-serif;
     font-size: 1.7rem;
@@ -4640,29 +4688,34 @@ a:focus {
     transition: background-color 0.2s linear, color 0.2s linear;
 }
 
-.register__form--button button i {
+.register__form--button button i,
+.register__form--button input[type="submit"] i {
     margin-left: 0.5rem;
     color: #000000;
     font-size: 1.7rem;
     transition: color 0.2s linear;
 }
 
-.register__form--button button:hover {
+.register__form--button button:hover,
+.register__form--button input[type="submit"]:hover {
     background-color: #2e9891;
     color: #ffffff;
     cursor: pointer;
 }
 
-.register__form--button button:hover i {
+.register__form--button button:hover i,
+.register__form--button input[type="submit"]:hover i {
     color: #ffffff;
 }
 
-.register__form--button button:active {
+.register__form--button button:active,
+.register__form--button input[type="submit"]:active {
     transform: scale(0.97);
 }
 
 @media (max-width: 768px) {
-    .register__form--button button {
+    .register__form--button button,
+  .register__form--button input[type="submit"] {
         font-size: 1.5rem;
         padding: 0.5rem 0.3rem;
     }
@@ -4828,7 +4881,8 @@ a:focus {
     visibility: hidden;
 }
 
-.revover__form--button button {
+.revover__form--button button,
+.revover__form--button input[type="submit"] {
     background-color: #d9d9d9;
     font-family: "Raleway", sans-serif;
     font-size: 1.7rem;
@@ -4840,29 +4894,34 @@ a:focus {
     transition: background-color 0.2s linear, color 0.2s linear;
 }
 
-.revover__form--button button i {
+.revover__form--button button i,
+.revover__form--button input[type="submit"] i {
     margin-left: 0.5rem;
     color: #000000;
     font-size: 1.7rem;
     transition: color 0.2s linear;
 }
 
-.revover__form--button button:hover {
+.revover__form--button button:hover,
+.revover__form--button input[type="submit"]:hover {
     background-color: #2e9891;
     color: #ffffff;
     cursor: pointer;
 }
 
-.revover__form--button button:hover i {
+.revover__form--button button:hover i,
+.revover__form--button input[type="submit"]:hover i {
     color: #ffffff;
 }
 
-.revover__form--button button:active {
+.revover__form--button button:active,
+.revover__form--button input[type="submit"]:active {
     transform: scale(0.97);
 }
 
 @media (max-width: 768px) {
-    .revover__form--button button {
+    .revover__form--button button,
+  .revover__form--button input[type="submit"] {
         font-size: 1.5rem;
         padding: 0.5rem 0.3rem;
     }

@@ -14,10 +14,10 @@
             font-weight: 300;
             font-size: 1.7rem;
             font-family: $font;
-            @include tablet{
+            @include tablet {
                font-size: 1.5rem;
             }
-            @include mobile{
+            @include mobile {
                font-size: 1.3rem;
             }
          }
@@ -31,7 +31,7 @@
          display: flex;
          justify-content: space-between;
          align-items: center;
-         @include tablet{
+         @include tablet {
             justify-content: flex-end;
          }
       }
@@ -51,13 +51,13 @@
       .active {
          color: $background;
       }
-      @include notebook{
+      @include notebook {
          margin-right: 0.5rem;
       }
-      @include tablet{
+      @include tablet {
          margin-right: 0;
          margin-bottom: 1rem;
-         &:last-child{
+         &:last-child {
             margin-bottom: 0;
          }
       }
@@ -73,12 +73,12 @@
          cursor: pointer;
          color: $background;
       }
-      @include tablet{
+      @include tablet {
          font-size: 1.7rem;
          font-weight: 500;
       }
    }
-   @include tablet{
+   @include tablet {
       background-color: $silver;
       position: fixed;
       top: 0;
@@ -92,11 +92,11 @@
       padding-left: 1rem;
       transition: left 0.2s linear;
    }
-   @include mobile-sm{
+   @include mobile-sm {
       width: 65%;
       left: -65%;
    }
-   &--open{
+   &--open {
       left: 0;
    }
 }
@@ -137,7 +137,7 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      @include mobile{
+      @include mobile {
          justify-content: center;
          flex-wrap: wrap;
       }
@@ -145,23 +145,23 @@
 }
 .navbar__brand {
    width: 22%;
-   @include notebook{
+   @include notebook {
       width: 28%;
    }
-   @include tablet{
+   @include tablet {
       width: 30%;
    }
-   @include mobile{
+   @include mobile {
       width: 50%;
       margin-bottom: 1rem;
    }
-   @include mobile-sm{
+   @include mobile-sm {
       width: 65%;
    }
-   @include mobile-xsm{
+   @include mobile-xsm {
       width: 75%;
    }
-   @include mobile-xxsm{
+   @include mobile-xxsm {
       width: 75%;
    }
 }
@@ -187,8 +187,8 @@
             color: $background;
          }
       }
-      @include mobile{
-      display: none;
+      @include mobile {
+         display: none;
       }
    }
    &--time {
@@ -210,11 +210,11 @@
             font-size: 1.7rem;
          }
       }
-      @include mobile{
+      @include mobile {
          margin-right: 0;
          padding-left: 1rem;
       }
-      @include mobile-sm{
+      @include mobile-sm {
          padding-left: 0;
       }
    }
@@ -239,14 +239,14 @@
             color: $black;
          }
       }
-      @include mobile{
+      @include mobile {
          padding-right: 1rem;
       }
-      @include mobile-sm{
+      @include mobile-sm {
          padding-right: 0;
       }
    }
-   @include mobile{
+   @include mobile {
       width: 100%;
       justify-content: space-between;
       margin-bottom: 1rem;
@@ -268,19 +268,19 @@
       &:hover {
          background-color: $main;
       }
-      @include tablet{
+      @include tablet {
          width: 10%;
+         height: 3rem;
+      }
+      @include mobile {
+         width: 15%;
          height: 2rem;
       }
-      @include mobile{
-         width: 15%;
-      }
-      @include mobile-sm{
+      @include mobile-sm {
          width: 20%;
-         height: 1.5rem;
       }
-      @include mobile-xsm{
-         width: 30%;
+      @include mobile-xsm {
+         width: 25%;
       }
    }
    &--link {
@@ -294,15 +294,18 @@
       font-family: $font;
       font-size: 1.7rem;
       font-weight: 500;
-      @include notebook{
+      @include notebook {
          font-size: 1.4rem;
       }
-      @include tablet{
+      @include tablet {
          font-weight: 300;
          font-size: 1.2rem;
       }
+      @include mobile-xxsm {
+         font-size: 1rem;
+      }
    }
-   @include tablet{
+   @include tablet {
       flex-wrap: wrap;
       justify-content: center;
    }

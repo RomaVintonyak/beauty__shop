@@ -147,7 +147,8 @@
       }
    }
    &--button {
-      button {
+      button,
+      input[type="submit"] {
          background-color: $silver-b;
          font-family: $font;
          font-size: 1.7rem;
@@ -237,7 +238,8 @@
       }
    }
    &--button {
-      button {
+      button,
+      input[type="submit"] {
          background-color: $silver-b;
          font-family: $font;
          font-size: 1.7rem;
@@ -393,7 +395,8 @@
       }
    }
    &--button {
-      button {
+      button,
+      input[type="submit"] {
          background-color: $silver-b;
          font-family: $font;
          font-size: 1.7rem;
