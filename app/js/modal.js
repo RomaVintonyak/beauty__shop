@@ -176,7 +176,7 @@ jQuery(document).ready(function () {
             "visibility": "visible"
          });
          return false;
-      }  else if(newPassword.length < 8){
+      }  else if(newPassword.length < 10){
          $(".error__mail--recover").removeAttr("style");
          $(".error__password--recover").css({
             "opacity": "1",
