@@ -101,6 +101,7 @@ jQuery(document).ready(function () {
                $("#loginForm").trigger("reset");
             alert(data);
             btnAuth.prop("disabled", false);
+            location.reload(true);
          }
       });
    });
@@ -167,14 +168,33 @@ jQuery(document).ready(function () {
    btnRecover.on("click", function () {
       var emailRecover = $("#emailRecover").val().trim(),
          emailRecoverReg = /^[a-z0-9_-]+@[a-z0-9-]+\.([a-z]{1,6}\.)?[a-z]{2,6}$/i;
+      var newPassword = $("#passwordRecover").val().trim();
+      var repeatNewPassword = $("#repeatPasswordRecover").val().trim();
       if (!emailRecoverReg.test(emailRecover) || emailRecover == '') {
          $(".error__mail--recover").css({
             "opacity": "1",
             "visibility": "visible"
          });
          return false;
+      }  else if(newPassword.length < 8){
+         $(".error__mail--recover").removeAttr("style");
+         $(".error__password--recover").css({
+            "opacity": "1",
+            "visibility": "visible"
+         });
+         return false;
+      }  else if(repeatNewPassword != newPassword){
+         $(".error__mail--recover").removeAttr("style");
+         $(".error__password--recover").removeAttr("style");
+         $(".error__repeatPassword--recover").css({
+            "opacity": "1",
+            "visibility": "visible"
+         });
+         return false;
       }
       $(".error__mail--recover").removeAttr("style");
+      $(".error__password--recover").removeAttr("style");
+      $(".error__repeatPassword--recover").removeAttr("style");
       $.ajax({
          url: recover_ajax_url,
          type: 'POST',
@@ -182,6 +202,7 @@ jQuery(document).ready(function () {
          data: {
             action: 'sendRecoverForm',
             'emailRecover': emailRecover,
+            'repeatNewPassword': repeatNewPassword,
          },
          dataType: 'html',
          beforeSend: function () {
